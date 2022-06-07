@@ -54,8 +54,3 @@ Jako poslední krok zbývá určení průměrné hodnoty na osobu. Zde opět vyu
 average_value = total_value / len(sum_per_person)
 print(f"Průměrná hodnota na osobu je {round(average_value)} Kč.")
 ```
-
-## Cvičení na doma
-::exc[excs>spolubydlici]
-
-

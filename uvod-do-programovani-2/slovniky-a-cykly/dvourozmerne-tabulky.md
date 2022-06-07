@@ -44,10 +44,3 @@ for item in books:
     sales += item["sold"] * item["price"]
 print(f"Celkové tržby za knihy prodané v roce 2019 jsou {sales} Kč.")
 ```
-
-## Cvičení: Slovníky a cykly
-::exc[excs>vysvedceni]
-::exc[excs>ctenar]
-
-## Bonusy
-::exc[excs>spz]
