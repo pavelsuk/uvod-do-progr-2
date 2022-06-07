@@ -69,5 +69,3 @@ class Manazer(Zamestnanec):
     return podrizeni
 ```
 
-## Kombinace seznamu a objektů
-::exc[excs>ridic]
