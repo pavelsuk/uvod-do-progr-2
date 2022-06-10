@@ -11,7 +11,7 @@ Jeden nákup zapsaný do slovníku vypadá například takto:
 Protože nákupů bylo více, jeden slovník by nám nestačil. Proto vytvoříme více slovníků a ty uložíme do seznamu.
 
 ```py
-purchaseList = [
+purchase_list = [
   {"person": "Petr", "item": "Prací prášek", "value": 399},
   {"person": "Ondra", "item": "Savo", "value": 80},
   {"person": "Petr", "item": "Toaletní papír", "value": 65},
@@ -30,7 +30,7 @@ purchaseList = [
 
 ```py
 sum_per_person = {}
-for item in purchaseList:
+for item in purchase_list:
   person = item["person"]
   value = item["value"]
   if person in sum_per_person:

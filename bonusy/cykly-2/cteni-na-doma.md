@@ -10,11 +10,11 @@ Naproti tomu, cyklus `while` je obecný cyklus a svou konstrukcí má blíže k 
 U cyklu `while` platí, že se jeho blok kódu provádí **opakovaně dokud** jeho podmínka platí. U následujícího příkladu je uživatel tázán na heslo stále dokola dokud heslo 123456 nezadá správně.
 
 ```py
-spravneHeslo = "123456"
-zadaneHeslo = input("Zadej heslo: ")
+spravne_heslo = "123456"
+zadane_heslo = input("Zadej heslo: ")
 
-while zadaneHeslo != spravneHeslo:
-  zadaneHeslo = input("Zadej heslo: ")
+while zadane_heslo != spravne_heslo:
+  zadane_heslo = input("Zadej heslo: ")
 
 print("Heslo zadano")
 ```
@@ -24,10 +24,10 @@ Pokud používáme cyklus `while` je třeba mít na paměti, že v těle cyklu m
 O pojmu _nekonečný cyklus_ si povíme něco více. Protože již z předchozí části známe příkaz `break`, který nám ukončí cyklus (to platí i pro cyklus `while`), můžeme si dovolit vytvořit nekonečný cyklus záměrně. Předchozí příklad je možné přepsat do následující podoby a například obohatit o výpis o nevyhovujícím heslu.
 
 ```py
-spravneHeslo = "123456"
+spravne_heslo = "123456"
 
 while True:
-  if input("Zadej heslo: ") == spravneHeslo:
+  if input("Zadej heslo: ") == spravne_heslo:
     break
   print("Špatné heslo")
 

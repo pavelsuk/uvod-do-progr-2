@@ -29,12 +29,12 @@ Při zápisu do Pythonu používáme slovo `or`:
 
 ```py
 rain = True
-wateringTruck = True
-if rain == True or wateringTruck == True:
-  wetStreet = True
+watering_truck = True
+if rain == True or watering_truck == True:
+  wet_street = True
 else:
-  wetStreet = False
-print(wetStreet)
+  wet_street = False
+print(wet_street)
 ```
 
 #### Tip
@@ -43,12 +43,12 @@ print(wetStreet)
 
 ```py
 rain = True
-wateringTruck = True
-if rain or wateringTruck:
-  wetStreet = True
+watering_truck = True
+if rain or watering_truck:
+  wet_street = True
 else:
-  wetStreet = False
-print(wetStreet)
+  wet_street = False
+print(wet_street)
 ```
 
 ### Logický součin - AND
@@ -70,28 +70,28 @@ Za jakých okolností budu mít mokré boty? Pouze v případě, kdy mají oba z
 K zápisu do Pythonu používáme slovo `and`.
 
 ```py
-wetStreet = False
-goOut = True
-if wetStreet and goOut:
-  wetShoes = True
+wet_street = False
+go_out = True
+if wet_street and go_out:
+  wet_shoes = True
 else:
-  wetShoes = False
-print(wetShoes)
+  wet_shoes = False
+print(wet_shoes)
 ```
 
 ### Kombinace součtu a součinu
 
-Součet a součin můžeme zkombinovat do jedné podmínky pomocí závorek. Zkusme si třeba vyhodnotit, zda budou naše boty mokré, pomocí informace o dešti a projetí kropícího vozu. Logický součet `or` proměnných `rain` a `wateringTruck` si vložíme do závorky a za něj napíšeme logický násobek `and` proměnnou `goOut`.
+Součet a součin můžeme zkombinovat do jedné podmínky pomocí závorek. Zkusme si třeba vyhodnotit, zda budou naše boty mokré, pomocí informace o dešti a projetí kropícího vozu. Logický součet `or` proměnných `rain` a `watering_truck` si vložíme do závorky a za něj napíšeme logický násobek `and` proměnnou `go_out`.
 
 ```py
 rain = True
-wateringTruck = False
-goOut = True
-if (rain or wateringTruck) and goOut:
-  wetShoes = True
+watering_truck = False
+go_out = True
+if (rain or watering_truck) and go_out:
+  wet_shoes = True
 else:
-  wetShoes = False
-print(wetShoes)
+  wet_shoes = False
+print(wet_shoes)
 ```
 
 ### Kombinace operátorů
@@ -101,9 +101,9 @@ Další příklad nás zavede zpět k divadlu Pěst na oko. Uvažujme, že divad
 ```py
 price = 250
 age = int(input("Zadejte věk: "))
-clubMember = input("Jste členem klubu přátel divadla? [ano/ne] ")
-clubMember = clubMember.lower() == "ano"
-if (age <= 26 or age >= 65) and clubMember:
+club_member = input("Jste členem klubu přátel divadla? [ano/ne] ")
+club_member = club_member.lower() == "ano"
+if (age <= 26 or age >= 65) and club_member:
   price = round(0.5 * price)
 print(f"Cena vstupenky je {price}.")
 ```
