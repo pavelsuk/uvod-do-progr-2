@@ -58,8 +58,8 @@ from forex_python.converter import CurrencyRates
 c = CurrencyRates()
 rates = c.get_rates('CZK')
 for key, value in rates.items():
-  rate = 1 / value
-  print(f"1 {key} = {round(rate, 2)}")
+    rate = 1 / value
+    print(f"1 {key} = {round(rate, 2)}")
 ```
 
 Se seznamem si můžeme dále hrát. Můžeme si například vypsat jen měny, se kterými naše malá směnárna obchoduje.
@@ -67,9 +67,9 @@ Se seznamem si můžeme dále hrát. Můžeme si například vypsat jen měny, s
 ```py
 currencyList = ["GBP", "EUR", "USD"]
 for key, value in rates.items():
-  if key in currencyList:
-    rate = 1 / value
-    print(f"1 {key} = {round(rate, 2)}")
+    if key in currencyList:
+        rate = 1 / value
+        print(f"1 {key} = {round(rate, 2)}")
 ```
 
 Toto by šlo napsat i jinak - v Pythonu máme stále co objevovat!

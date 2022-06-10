@@ -31,9 +31,9 @@ Při zápisu do Pythonu používáme slovo `or`:
 rain = True
 wateringTruck = True
 if rain == True or wateringTruck == True:
-  wetStreet = True
+    wetStreet = True
 else:
-  wetStreet = False
+    wetStreet = False
 print(wetStreet)
 ```
 
@@ -45,9 +45,9 @@ print(wetStreet)
 rain = True
 wateringTruck = True
 if rain or wateringTruck:
-  wetStreet = True
+    wetStreet = True
 else:
-  wetStreet = False
+    wetStreet = False
 print(wetStreet)
 ```
 
@@ -73,9 +73,9 @@ K zápisu do Pythonu používáme slovo `and`.
 wetStreet = False
 goOut = True
 if wetStreet and goOut:
-  wetShoes = True
+    wetShoes = True
 else:
-  wetShoes = False
+    wetShoes = False
 print(wetShoes)
 ```
 
@@ -88,9 +88,9 @@ rain = True
 wateringTruck = False
 goOut = True
 if (rain or wateringTruck) and goOut:
-  wetShoes = True
+    wetShoes = True
 else:
-  wetShoes = False
+    wetShoes = False
 print(wetShoes)
 ```
 
@@ -104,7 +104,7 @@ age = int(input("Zadejte věk: "))
 clubMember = input("Jste členem klubu přátel divadla? [ano/ne] ")
 clubMember = clubMember.lower() == "ano"
 if (age <= 26 or age >= 65) and clubMember:
-  price = round(0.5 * price)
+    price = round(0.5 * price)
 print(f"Cena vstupenky je {price}.")
 ```
 

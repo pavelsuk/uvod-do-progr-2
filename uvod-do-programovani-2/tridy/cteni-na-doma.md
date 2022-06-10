@@ -9,19 +9,19 @@ from dataclasses import dataclass
 
 @dataclass
 class Zamestnanec:
-  jmeno: str
-  pozice: str
-  pocet_dni_dovolene: int = 25
+    jmeno: str
+    pozice: str
+    pocet_dni_dovolene: int = 25
 
-  def cerpani_dovolene(self, days):
-    if self.pocet_dni_dovolene >= days:
-      self.pocet_dni_dovolene -= days
-      return f"Užij si to."
-    else:
-      return f"Bohužel už máš nárok jen na {self.pocet_dni_dovolene} dní."
+    def cerpani_dovolene(self, days):
+        if self.pocet_dni_dovolene >= days:
+        self.pocet_dni_dovolene -= days
+        return f"Užij si to."
+        else:
+        return f"Bohužel už máš nárok jen na {self.pocet_dni_dovolene} dní."
 
-  def vypis_informace(self):
-    return f"{self.jmeno} pracuje na pozici {self.pozice}."
+    def vypis_informace(self):
+        return f"{self.jmeno} pracuje na pozici {self.pozice}."
     
 frantisek = Zamestnanec("František Novák", "konstruktér")
 print(frantisek.cerpani_dovolene(5))

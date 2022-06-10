@@ -12,39 +12,39 @@ Např. uvažujme program, který počítá obvody a obsahy geometrických obrazc
 from abc import ABC, abstractmethod
 
 class Obrazec(ABC):
-  @abstractmethod
-  def vypocti_obvod():
-    pass
+    @abstractmethod
+    def vypocti_obvod():
+        pass
 
-  @abstractmethod
-  def vypocti_obsah():
-    pass
+    @abstractmethod
+    def vypocti_obsah():
+        pass
 ```
 
 Dále přidáme třídy `Ctverec` a `Obdelnik`, které budou dědit od třídy `Obrazec`. Těmto třídám už můžeme implementovat metody `vypocti_obvod()` a `vypocti_obsah()`, založit na jejich základě objekty a pracovat s nimi.
 
 ```python
 class Ctverec(Obrazec):
-  def __init__(self, a):
-    self.a = a
+    def __init__(self, a):
+        self.a = a
 
-  def vypocti_obvod(self):
-    return 4 * self.a
-  
-  def vypocti_obsah(self):
-    return self.a * self.a
+    def vypocti_obvod(self):
+        return 4 * self.a
+    
+    def vypocti_obsah(self):
+        return self.a * self.a
 
 
 class Obdelnik(Obrazec):
-  def __init__(self, a, b):
-    self.a = a
-    self.b = b
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
 
-  def vypocti_obvod(self):
-    return 2 * (self.a + self.b)
-  
-  def vypocti_obsah(self):
-    return self.a * self.b
+    def vypocti_obvod(self):
+        return 2 * (self.a + self.b)
+    
+    def vypocti_obsah(self):
+        return self.a * self.b
 
 
 maly_ctverec = Ctverec(10)
@@ -64,9 +64,9 @@ Uvažujme nyní, že máme u nějakého objektu vypsat jeho obvod. Chceme to ale
 ```python
 neznamy_obrazec = Ctverec(10)
 if isinstance(neznamy_obrazec, Obrazec):
-  print(f"Obvod obrazce je {neznamy_obrazec.vypocti_obsah()}")
+    print(f"Obvod obrazce je {neznamy_obrazec.vypocti_obsah()}")
 else:
-  print("Objekt není dvourozměrný odstavec.")
+    print("Objekt není dvourozměrný odstavec.")
 ```
 
 ### Vlastnosti objektu
@@ -79,39 +79,39 @@ Vlastnosti poté čteme jako atributy, tj. nepoužíváme kulaté závorky jako 
 from abc import ABC, abstractproperty
 
 class Obrazec(ABC):
-  @abstractproperty
-  def obvod():
-    pass
+    @abstractproperty
+    def obvod():
+        pass
 
-  @abstractproperty
-  def obsah():
-    pass
+    @abstractproperty
+    def obsah():
+        pass
 
 class Ctverec(Obrazec):
-  def __init__(self, a):
-    self.a = a
+    def __init__(self, a):
+        self.a = a
 
-  @property
-  def obvod(self):
-    return 4 * self.a
-  
-  @property
-  def obsah(self):
-    return self.a * self.a
+    @property
+    def obvod(self):
+        return 4 * self.a
+    
+    @property
+    def obsah(self):
+        return self.a * self.a
 
 
 class Obdelnik(Obrazec):
-  def __init__(self, a, b):
-    self.a = a
-    self.b = b
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
 
-  @property
-  def obvod(self):
-    return 2 (self.a + self.b)
-  
-  @property
-  def obsah(self):
-    return self.a * self.b
+    @property
+    def obvod(self):
+        return 2 (self.a + self.b)
+    
+    @property
+    def obsah(self):
+        return self.a * self.b
 
 
 maly_ctverec = Ctverec(10)
