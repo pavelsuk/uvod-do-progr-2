@@ -8,19 +8,19 @@ Uvažujme třeba prekérní situaci, kdy na poslední chvíli potřebujeme objed
 
 ```py
 list_of_items = [
-  {"title": "Modrá kravata", "price": 239, "in_stock": True},
-  {"title": "Luxusní psací pero", "price": 1599, "in_stock": True},
-  {"title": "Degustační balíček kávy", "price": 599, "in_stock": True},
-  {"title": "Parfém", "price": 559, "in_stock": False},
-  {"title": "Čajová konvička s hrnky", "price": 899, "in_stock": True},
-  {"title": "Sklenice na víno", "price": 799, "in_stock": True},
-  {"title": "Fitness náramek", "price": 2399, "in_stock": False},
+    {"title": "Modrá kravata", "price": 239, "in_stock": True},
+    {"title": "Luxusní psací pero", "price": 1599, "in_stock": True},
+    {"title": "Degustační balíček kávy", "price": 599, "in_stock": True},
+    {"title": "Parfém", "price": 559, "in_stock": False},
+    {"title": "Čajová konvička s hrnky", "price": 899, "in_stock": True},
+    {"title": "Sklenice na víno", "price": 799, "in_stock": True},
+    {"title": "Fitness náramek", "price": 2399, "in_stock": False},
 ]
 
 for item in list_of_items:
-  if 500 <= item["price"] <= 1000 and item["in_stock"]:
-    print(f"Vybraný dárek je {item['title']}")
-    break
+    if 500 <= item["price"] <= 1000 and item["in_stock"]:
+        print(f"Vybraný dárek je {item['title']}")
+        break
 ```
 
 Pokud bychom příkaz `break` odebrali, program by pokračoval v hledání a vypsal ještě 2 další dárky, která vyhovují podmínkám.

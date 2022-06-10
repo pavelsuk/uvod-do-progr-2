@@ -44,9 +44,9 @@ K ověření, jestli nějaký klíč už ve slovníku je, použijeme operátor `
 ```py
 item = {"title": "Čajová konvička s hrnky", "price": 899, "in_stock": True}
 if "weight" in item:
-  print(f"Hmotnost předmětu je", item["weight"], "kg.")
+    print(f"Hmotnost předmětu je", item["weight"], "kg.")
 else:
-  print("Hmotnost není zadána.")
+    print("Hmotnost není zadána.")
 ```
 
 Snadno můžeme nějakou existující hodnotu upravit nebo přidat novou.

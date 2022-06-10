@@ -12,14 +12,14 @@ Začněme s jednoduchou funkcí, která pouze vypíše text na obrazovku.
 
 ```py
 def greet_user():
-  print("Ahoj!")
+    print("Ahoj!")
 ```
 
 Pokud tento kód zkopírujeme do programu, zdánlivě se nic nestane. Funkce je sice vytvořena, ale nevoláme ji. 
 
 ```py
 def greet_user():
-  print("Ahoj!")
+    print("Ahoj!")
 greet_user()
 ```
 
@@ -34,7 +34,7 @@ Upravme naši funkci tak, aby vypsala oslovení, které jí zadáme:
 
 ```py
 def greet_user(name):
-  print(f"Ahoj {name}!")
+    print(f"Ahoj {name}!")
 greet_user("Jirko")
 ```
 
@@ -42,7 +42,7 @@ Naše funkce zatím provedly nějakou akci, ale nevrátily nám žádný **výst
 
 ```py
 def sum_two_numbers(a, b):
-  return a + b
+    return a + b
 ```
 
 Výstup funkce můžeme uložit do proměnné.
@@ -58,8 +58,8 @@ V proměnné `returned_value` tedy budeme mít uložený výsledek našeho souč
 
 ```py
 def sum_two_numbers(a, b):
-  return a + b
-  print(sum)
+    return a + b
+    print(sum)
 ```
 
 ### Čtení na doma - čistá funkce
@@ -68,7 +68,7 @@ Níže definovaná funkce je bez tzv. *vedlejších efektů* (`side effect`), tj
 
 ```py
 def sum_two_numbers(a, b):
-  return a + b
+    return a + b
 ```
 
 Níže uvedená funkce není čistá, protože čte proměnnou "zvenku". Může tedy v různých situacích vracet různé výsledky.
@@ -76,14 +76,14 @@ Níže uvedená funkce není čistá, protože čte proměnnou "zvenku". Může 
 ```py
 exchange_rate = 26
 def convert_to_euro(crown):
-  return crown * exchange_rate
+    return crown * exchange_rate
 ```
 
 Takto uvedená funkce je již čistou funkcí.
 
 ```py
 def convert_to_euro(crown, exchange_rate):
-  return crown * exchange_rate
+    return crown * exchange_rate
 ```
 
 ### Funkce bez kódu
@@ -92,5 +92,5 @@ Pokud si při návrhu programu uvědomíte, že je nějaká funkce potřeba, ale
 
 ```py
 def code_me_later(par1, par2):
-  pass
+    pass
 ```

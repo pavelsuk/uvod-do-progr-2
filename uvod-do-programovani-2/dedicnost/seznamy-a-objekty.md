@@ -6,32 +6,32 @@ Upravme tedy třídu `Manazer` tím, že namísto atributu `pocet_podrizenych` v
 
 ```py
 class Manazer(Zamestnanec):
-  def __init__(self, jmeno, pozice):
-    self.jmeno = jmeno
-    self.pozice = pozice
-    self.pocet_dni_dovolene = 25
-    self.podrizeni = []
+    def __init__(self, jmeno, pozice):
+        self.jmeno = jmeno
+        self.pozice = pozice
+        self.pocet_dni_dovolene = 25
+        self.podrizeni = []
 
-  def pridej_podrizeneho(self, podrizeny):
-    self.podrizeni.append(podrizeny)
+    def pridej_podrizeneho(self, podrizeny):
+        self.podrizeni.append(podrizeny)
 ```
 
 Náš kód už bychom mohli spustit, ale nemohli bychom pořádně otestovat, že přidávání podřízených funguje. My je totiž ukládáme, ale zatím nemáme funkci pro jejich vypsání. Přidáme tedy funkci `vypis_podrizene`, která vrátí informaci o podřízených manažera.
 
 ```py
 class Manazer(Zamestnanec):
-  def __init__(self, jmeno, pozice):
-    super().__init__(jmeno, pozice)
-    self.podrizeni = []
+    def __init__(self, jmeno, pozice):
+        super().__init__(jmeno, pozice)
+        self.podrizeni = []
 
-  def pridej_podrizeneho(self, novy_podrizeny):
-    self.podrizeni.append(novy_podrizeny)
+    def pridej_podrizeneho(self, novy_podrizeny):
+        self.podrizeni.append(novy_podrizeny)
 
-  def vypis_podrizene(self):
-    podrizeni = ""
-    for item in self.podrizeni:
-      podrizeni += item.jmeno + ", "
-    return podrizeni
+    def vypis_podrizene(self):
+        podrizeni = ""
+        for item in self.podrizeni:
+        podrizeni += item.jmeno + ", "
+        return podrizeni
 ```
 
 Nyní můžeme vše vyzkoušet. Vedoucímu, který je uložený v proměnné `boss`, přiřadíme dva podřízené. Následně si zkusíme proměnné vypsat.
@@ -52,20 +52,20 @@ Jako poslední můžeme vrátit metodu `__str__`, která zjistí počet podříz
 
 ```py
 class Manazer(Zamestnanec):
-  def __init__(self, jmeno, pozice):
-    super().__init__(jmeno, pozice)
-    self.podrizeni = []
+    def __init__(self, jmeno, pozice):
+        super().__init__(jmeno, pozice)
+        self.podrizeni = []
 
-  def __str__(self):
-    return super().__str__() + f" Má {len(self.podrizeni)} podřízených."
+    def __str__(self):
+        return super().__str__() + f" Má {len(self.podrizeni)} podřízených."
 
-  def pridej_podrizeneho(self, novy_podrizeny):
-    self.podrizeni.append(novy_podrizeny)
+    def pridej_podrizeneho(self, novy_podrizeny):
+        self.podrizeni.append(novy_podrizeny)
 
-  def vypis_podrizene(self):
-    podrizeni = ""
-    for item in self.podrizeni:
-      podrizeni += item.jmeno + ", "
-    return podrizeni
+    def vypis_podrizene(self):
+        podrizeni = ""
+        for item in self.podrizeni:
+        podrizeni += item.jmeno + ", "
+        return podrizeni
 ```
 

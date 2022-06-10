@@ -11,7 +11,7 @@ Zkusíme si nejprve vypsat všechna čísla od 0 do nějaké hodnoty.
 ```py
 stop = int(input("Zadej konec: "))
 for i in range(stop):
-  print(i)
+    print(i)
 ```
 
 Takto například vypadá průběh programu:
@@ -33,7 +33,7 @@ Zkusme nyní využít i parametr `start`. Zkusíme si třeba vypsat čísla niko
 start = int(input("Zadej začátek: "))
 stop = int(input("Zadej konec: "))
 for i in range(start, stop):
-  print(i)
+    print(i)
 ```
 
 Opět platí, že dovnitř cyklu můžeme vložit podmínku. Zkusme si například vypsat pouze ta čísla z daného rozsahu, která jsou dělitelná třemi.
@@ -42,8 +42,8 @@ Opět platí, že dovnitř cyklu můžeme vložit podmínku. Zkusme si napříkl
 start = int(input("Zadej začátek: "))
 stop = int(input("Zadej konec: "))
 for i in range(start, stop):
-  if i % 3 == 0:
-    print(i)
+    if i % 3 == 0:
+        print(i)
 ```
 
 Pevný počet opakování ale zdaleka nevyužíváme jen v kombinaci s čísly. Vraťme se třeba k našemu příkladu na seznam hostů z opakovací lekce. Seznam hostů nemusíme zapisovat přímo do programu, ale můžeme požádat uživatele, aby nám jména hostů postupně zadával. Jména pak připojujeme k seznamu stávajícímu hostů pomocí funkce `append`.
@@ -52,8 +52,8 @@ Pevný počet opakování ale zdaleka nevyužíváme jen v kombinaci s čísly. 
 number_of_guests = int(input("Zadej počet hostů: "))
 guest_list = []
 for i in range(number_of_guests):
-  new_guest = input("Zadej jméno hosta: ")
-  guest_list.append(new_guest)
+    new_guest = input("Zadej jméno hosta: ")
+    guest_list.append(new_guest)
 print(guest_list)
 ```
 

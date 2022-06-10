@@ -10,9 +10,9 @@ My ale máme další dvě knihy. Jak vložíme všechny knihy do jedné proměnn
 
 ```py
 books = [
-  {"title": "Zkus mě chytit", "sold": 4165, "price": 347, "year": 2018},
-  {"title": "Vrah zavolá v deset", "sold": 5681, "price": 299, "year": 2019},
-  {"title": "Zločinný steh", "sold": 2565, "price": 369, "year": 2019},
+    {"title": "Zkus mě chytit", "sold": 4165, "price": 347, "year": 2018},
+    {"title": "Vrah zavolá v deset", "sold": 5681, "price": 299, "year": 2019},
+    {"title": "Zločinný steh", "sold": 2565, "price": 369, "year": 2019},
 ]
 ```
 Je to v podstatě běžná **dvourozměrná tabulka**, jakou můžeme vytvořit například v Excelu.
@@ -22,7 +22,7 @@ Upravme nyní náš výpočet celkového počtu prodaných knih. Nyní pomocí c
 ```py
 sales = 0
 for item in books:
-  sales += item["sold"]
+    sales += item["sold"]
 print(f"Celkem bylo prodáno {sales} knih.")
 ```
 
@@ -31,7 +31,7 @@ Zkusme si ještě spočítat tržby nejen v prodaných kusech, ale i v penězíc
 ```py
 sales = 0
 for item in books:
-  sales += item["sold"] * item["price"]
+    sales += item["sold"] * item["price"]
 print(f"Celkové tržby jsou {sales} Kč.")
 ```
 
@@ -40,7 +40,7 @@ Zkusme ještě jednu úpravu. Nakladatele zajímá, jaké jsou peněžní tržby
 ```py
 sales = 0
 for item in books:
-  if item["year"] == 2019:
-    sales += item["sold"] * item["price"]
+    if item["year"] == 2019:
+        sales += item["sold"] * item["price"]
 print(f"Celkové tržby za knihy prodané v roce 2019 jsou {sales} Kč.")
 ```

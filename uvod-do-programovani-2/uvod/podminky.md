@@ -9,9 +9,9 @@ number_of_tickets = int(input("Kolik si přejete lístků? "))
 price_per_ticket = 190
 total_price = number_of_tickets * price_per_ticket
 if total_price >= 500:
-  discount = 0.1
-  total_price = total_price * (1 - discount)
-  print(f"Získáváte slevu {discount * 100} %")
+    discount = 0.1
+    total_price = total_price * (1 - discount)
+    print(f"Získáváte slevu {discount * 100} %")
 
 print(f"Celková cena nákupu je {total_price} Kč.")
 ```
@@ -31,9 +31,9 @@ items_in_stock = 5
 number_of_items = int(input("Kolik si přejete koupit kusů zboží? "))
 
 if number_of_items <= items_in_stock:
-  print("Položky byly vloženy do košíku.")
+    print("Položky byly vloženy do košíku.")
 else:
-  print(f"Bohužel máme na skladě posledních {items_in_stock} kusů.")
+    print(f"Bohužel máme na skladě posledních {items_in_stock} kusů.")
 ```
 
 Podmínek můžeme mít i několik za sebou.
@@ -41,15 +41,15 @@ Podmínek můžeme mít i několik za sebou.
 ```py
 points = int(input("Kolik bodů získal student v testu? "))
 if points <= 60:
-  mark = 5
+    mark = 5
 elif points <= 70:
-  mark = 4
+    mark = 4
 elif points <= 80:
-  mark = 3
+    mark = 3
 elif points <= 90:
-  mark = 2
+    mark = 2
 else:
-  mark = 1
+    mark = 1
 print(f"Známka z testu je {mark}.")
 ```
 
@@ -63,20 +63,20 @@ Poslední možností jsou vnořené podmínky, tj. podmínky uvnitř podmínek. 
 price_per_ticket = 190
 age = int(input("Jaký je váš věk? "))
 if age >= 18:
-  number_of_tickets = int(input("Kolik si přejete lístků? "))
-  total_price = number_of_tickets * price_per_ticket
-  if total_price >= 1000:
-    discount = 0.25
-    print(f"Získáváte slevu {discount * 100} %")
-  elif total_price >= 500:
-    discount = 0.1
-    print(f"Získáváte slevu {discount * 100} %")
-  else:
-    discount = 0
-  total_price *=  (1 - discount)
-  print(f"Celková cena nákupu je {round(total_price)} Kč.")
+    number_of_tickets = int(input("Kolik si přejete lístků? "))
+    total_price = number_of_tickets * price_per_ticket
+    if total_price >= 1000:
+        discount = 0.25
+        print(f"Získáváte slevu {discount * 100} %")
+    elif total_price >= 500:
+        discount = 0.1
+        print(f"Získáváte slevu {discount * 100} %")
+    else:
+        discount = 0
+    total_price *=  (1 - discount)
+    print(f"Celková cena nákupu je {round(total_price)} Kč.")
 else:
-  print("Tento film bohužel není mládeži přístupný.")
+    print("Tento film bohužel není mládeži přístupný.")
 ```
 
 Všimněte si, že klíčová slova `else` a `elif` jsou vždy zarovnaná stejně jako začátek podmínky, ke které se vztahují.

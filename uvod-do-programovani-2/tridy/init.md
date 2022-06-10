@@ -6,12 +6,12 @@ Tento postup ale působí lehce chaoticky. V naší analogii s formuláři to vy
 
 ```py
 class Zamestnanec:
-  def __init__(self, jmeno, pozice):
-    self.jmeno = jmeno
-    self.pozice = pozice
+    def __init__(self, jmeno, pozice):
+        self.jmeno = jmeno
+        self.pozice = pozice
 
-  def vypis_informace(self):
-    return f"{self.jmeno} pracuje na pozici {self.pozice}."
+    def vypis_informace(self):
+        return f"{self.jmeno} pracuje na pozici {self.pozice}."
 ```
 
 Tento styl je standardní - parametry jsou pojmenované stejně jako atributy objektu, kam se jejich hodnoty ukládají. Mezi `self.jmeno` a `jmeno` je důležitý rozdíl:
@@ -33,20 +33,20 @@ Nyní již víme, že každý objekt třídy `Zamestnanec` má vyplněné jméno
 
 ```py
 class Zamestnanec:
-  def __init__(self, jmeno, pozice):
-    self.jmeno = jmeno
-    self.pozice = pozice
-    self.pocet_dni_dovolene = 25
+    def __init__(self, jmeno, pozice):
+        self.jmeno = jmeno
+        self.pozice = pozice
+        self.pocet_dni_dovolene = 25
 
-  def vypis_informace(self):
-    return f"{self.jmeno} pracuje na pozici {self.pozice}."
+    def vypis_informace(self):
+        return f"{self.jmeno} pracuje na pozici {self.pozice}."
 
-  def cerpani_dovolene(self, days):
-    if self.pocet_dni_dovolene >= days:
-      self.pocet_dni_dovolene -= days
-      return f"Užij si to."
-    else:
-      return f"Bohužel už máš nárok jen na {self.pocet_dni_dovolene} dní."
+    def cerpani_dovolene(self, days):
+        if self.pocet_dni_dovolene >= days:
+        self.pocet_dni_dovolene -= days
+        return f"Užij si to."
+        else:
+        return f"Bohužel už máš nárok jen na {self.pocet_dni_dovolene} dní."
 ```
 
 Nyní se podívejme, jak budou vyřizovány Františkovy žádosti o dovolenou.
