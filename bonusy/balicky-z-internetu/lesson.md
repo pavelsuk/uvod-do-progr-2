@@ -65,9 +65,9 @@ for key, value in rates.items():
 Se seznamem si můžeme dále hrát. Můžeme si například vypsat jen měny, se kterými naše malá směnárna obchoduje.
 
 ```py
-currencyList = ["GBP", "EUR", "USD"]
+currency_list = ["GBP", "EUR", "USD"]
 for key, value in rates.items():
-  if key in currencyList:
+  if key in currency_list:
     rate = 1 / value
     print(f"1 {key} = {round(rate, 2)}")
 ```

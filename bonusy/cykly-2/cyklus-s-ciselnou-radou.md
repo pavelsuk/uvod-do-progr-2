@@ -49,12 +49,12 @@ for i in range(start, stop):
 Pevný počet opakování ale zdaleka nevyužíváme jen v kombinaci s čísly. Vraťme se třeba k našemu příkladu na seznam hostů z opakovací lekce. Seznam hostů nemusíme zapisovat přímo do programu, ale můžeme požádat uživatele, aby nám jména hostů postupně zadával. Jména pak připojujeme k seznamu stávajícímu hostů pomocí funkce `append`.
 
 ```py
-numberOfGuests = int(input("Zadej počet hostů: "))
-guestList = []
-for i in range(numberOfGuests):
-  newGuest = input("Zadej jméno hosta: ")
-  guestList.append(newGuest)
-print(guestList)
+number_of_guests = int(input("Zadej počet hostů: "))
+guest_list = []
+for i in range(number_of_guests):
+  new_guest = input("Zadej jméno hosta: ")
+  guest_list.append(new_guest)
+print(guest_list)
 ```
 
 #### Tip
