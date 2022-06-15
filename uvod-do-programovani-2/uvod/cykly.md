@@ -6,16 +6,16 @@ Ideální je využití cyklů spolu s kolekcemi. Pro každý prvek kolekce prove
 
 ```py
 school_report = [
-  ["Český jazyk", 1],
-  ["Anglický jazyk", 1],
-  ["Matematika", 1],
-  ["Přírodopis", 2],
-  ["Dějepis", 1],
-  ["Fyzika", 2],
-  ["Hudební výchova", 4],
-  ["Výtvarná výchova", 2],
-  ["Tělesná výchova", 3],
-  ["Chemie", 4],
+    ["Český jazyk", 1],
+    ["Anglický jazyk", 1],
+    ["Matematika", 1],
+    ["Přírodopis", 2],
+    ["Dějepis", 1],
+    ["Fyzika", 2],
+    ["Hudební výchova", 4],
+    ["Výtvarná výchova", 2],
+    ["Tělesná výchova", 3],
+    ["Chemie", 4],
 ]
 ```
 
@@ -24,7 +24,7 @@ Nejprve si zkusme vypočítat průměrnou známku studenta na vysvědčení.
 ```py
 sum_of_marks = 0
 for mark in school_report:
-  sum_of_marks += mark[1]
+    sum_of_marks += mark[1]
 average = round(sum_of_marks/len(school_report), 2)
 print(f"Průměrná známka studenta je {average}.")
 ```
@@ -35,8 +35,8 @@ Dále můžeme například vypsat všechny předměty, které jsou pro studenta 
 problematic_subjects = []
 print("Pro studenta jsou problematické tyto předměty:")
 for mark in school_report:
-  if mark[1] > 3:
-    print(mark[0])
+    if mark[1] > 3:
+        print(mark[0])
 ```
 
 **Námět:** Pro přijetí na střední školu jsou často důležité známky jen z některých předmětů. Vypočítej tedy průměr známek z obou jazyků, matematiky a fyziky. Tip: ulož si tyto předměty do seznamu a použij podmínku s operátorem `in`.

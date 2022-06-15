@@ -16,7 +16,7 @@ Zkusme si nejprve vypsat názvy všech knih ve slovníku (bez počtu prodaných 
 
 ```py
 for key in sales:
-  print(key)
+    print(key)
 ```
 
 Zkusme nyní informaci o každém prodeji vypsat pomocí věty, do které vložíme název knihy a počet prodaných kusů. Oproti předchozímu příkladu je tu změna. **Každá položka** slovníku se skládá z **klíče** a **hodnoty**. V cyklu můžeme použít oboje (a často i používáme). Využijeme tedy **dvě proměnné**, které oddělíme čárkou. Do první proměnné je uložený klíč a do druhé hodnota. 
@@ -26,9 +26,9 @@ Všimni si též, že za slovník vkládáme `.items()`. To je důležité, prot
 
 ```py
 for key, value in sales.items():
-  print(f"Knihy", key, "bylo prodáno", value, "výtisků.")
-  # Použití f-stringu
-  print(f"Knihy {key} bylo prodáno {value} výtisků.")
+    print(f"Knihy", key, "bylo prodáno", value, "výtisků.")
+    # Použití f-stringu
+    print(f"Knihy {key} bylo prodáno {value} výtisků.")
 ```
 
 Zkusme si nyní spočítat celkový počet prodaných kusů. Vytvoříme si tedy proměnnou `total_sales` a pro každou knihu do ní přičteme počet prodaných kusů.
@@ -36,9 +36,9 @@ Zkusme si nyní spočítat celkový počet prodaných kusů. Vytvoříme si tedy
 ```py
 total_sales = 0
 for key, value in sales.items():
-  print(f"Knihy", key, "bylo prodáno", value, "výtisků.")
-  # Použití f-stringu
-  print(f"Knihy {key} bylo prodáno {value} výtisků.")
-  total_sales += value
+    print(f"Knihy", key, "bylo prodáno", value, "výtisků.")
+    # Použití f-stringu
+    print(f"Knihy {key} bylo prodáno {value} výtisků.")
+    total_sales += value
 print(f"Celkem bylo prodáno {total_sales} výtisků.")
 ```

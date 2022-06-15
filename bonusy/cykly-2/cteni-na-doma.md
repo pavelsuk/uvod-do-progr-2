@@ -14,7 +14,7 @@ spravne_heslo = "123456"
 zadane_heslo = input("Zadej heslo: ")
 
 while zadane_heslo != spravne_heslo:
-  zadane_heslo = input("Zadej heslo: ")
+    zadane_heslo = input("Zadej heslo: ")
 
 print("Heslo zadano")
 ```
@@ -27,9 +27,9 @@ O pojmu _nekonečný cyklus_ si povíme něco více. Protože již z předchozí
 spravne_heslo = "123456"
 
 while True:
-  if input("Zadej heslo: ") == spravne_heslo:
-    break
-  print("Špatné heslo")
+    if input("Zadej heslo: ") == spravne_heslo:
+        break
+    print("Špatné heslo")
 
 print("Heslo zadano")
 ```
@@ -48,10 +48,10 @@ Následující příkaz vytiskne pouze ta čísla z číselné řady, která jso
 stop = int(input("Zadej konec: "))
 
 for i in range(stop):
-  if i % 10 != 0:
-    continue
+    if i % 10 != 0:
+        continue
 
-  print(i)
+    print(i)
 ```
 
 Příkazy `break` a `continue` je možné v rámci jednoho cyklu zkombinovat, např.
@@ -60,17 +60,17 @@ Příkazy `break` a `continue` je možné v rámci jednoho cyklu zkombinovat, na
 soucet = 0
 
 while True:
-  vstup = input("Zadej číslo: ")
+    vstup = input("Zadej číslo: ")
 
-  if not vstup:
-    break
+    if not vstup:
+        break
 
-  if not vstup.isdigit():
-    print("Nezadal jsi číslo")
-    continue
+    if not vstup.isdigit():
+        print("Nezadal jsi číslo")
+        continue
 
-  print(f"Zadáno číslo {vstup}")
-  soucet += int(vstup)
+    print(f"Zadáno číslo {vstup}")
+    soucet += int(vstup)
 
 print(f"Součet je {soucet}")
 ```

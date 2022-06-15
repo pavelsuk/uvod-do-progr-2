@@ -16,8 +16,8 @@ Všimni si parametru `self` u metody. Pomocí `self` se **odkazujeme na atributy
 
 ```py
 class Zamestnanec:
-  def vypis_informace(self):
-    return f"{self.jmeno} pracuje na pozici {self.pozice}."
+    def vypis_informace(self):
+        return f"{self.jmeno} pracuje na pozici {self.pozice}."
 ```
 
 Protože pracujeme s metodou, můžeme (ale nemusíme) použít klíčové slovo `return` a vrátit nějakou hodnotu.

@@ -13,9 +13,9 @@ id_number = input("Zadejte rodné číslo: ")
 year_of_birth = id_number[0] + id_number[1]
 year_of_birth = int(year_of_birth)
 if year_of_birth > 20:
-  year_of_birth = 1900 + year_of_birth
+    year_of_birth = 1900 + year_of_birth
 else:
-  year_of_birth = 2000 + year_of_birth
+    year_of_birth = 2000 + year_of_birth
 print(f"Uživatel(ka) se narodil(a) v roce {year_of_birth}.")
 ```
 
@@ -44,18 +44,18 @@ Chceme-li si ověřit, zda je nějaká hodnota v seznamu, můžeme použít oper
 ```py
 incoming_person = input("Zadej jméno příchozího hosta: ")
 if incoming_person in guest_list:
-  print("Buď vítán(a)!")
+    print("Buď vítán(a)!")
 else:
-  print("Bohužel nejsi na seznamu.")
+    print("Bohužel nejsi na seznamu.")
 ```
 
 Sekvence v sobě mohou obsahovat i jiné sekvence. Je to podobné, jako polička na knihy. Ta obsahuje několik knih, každá kniha má několik kapitol, každá kapitola se skládá ze spousty slov a písmen. Níže máš příklad seznamu uvnitř seznamu, který obsahuje jména a známky studentů v nějakém předmětu.
 
 ```py
 school_marks = [
-  ["Jiří", 1, 4, 3, 2],
-  ["Natálie", 2, 3, 4],
-  ["Klára", 3, 2, 4, 1, 3]
+    ["Jiří", 1, 4, 3, 2],
+    ["Natálie", 2, 3, 4],
+    ["Klára", 3, 2, 4, 1, 3]
 ]
 
 print(f"První student(ka) v seznamu je {school_marks[0][0]}.")

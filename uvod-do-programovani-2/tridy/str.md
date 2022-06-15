@@ -18,12 +18,12 @@ Převod na řetězec zařídíme tím, že třídě přidáme metodu `__str__`. 
 
 ```python
 class Zamestnanec:
-  def __init__(self, jmeno, pozice):
-    self.jmeno = jmeno
-    self.pozice = pozice
+    def __init__(self, jmeno, pozice):
+        self.jmeno = jmeno
+        self.pozice = pozice
 
-  def __str__(self):
-    return f"{self.jmeno} pracuje na pozici {self.pozice}."
+    def __str__(self):
+        return f"{self.jmeno} pracuje na pozici {self.pozice}."
 
 frantisek = Zamestnanec("František Novák", "konstruktér")
 print(str(frantisek))

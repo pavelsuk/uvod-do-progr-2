@@ -8,11 +8,11 @@ Napíšeme tedy novou funkci `__init__`, protože potřebujeme vytvořit atribut
 
 ```py
 class Manazer(Zamestnanec):
-  def __init__(self, jmeno, pozice, pocet_podrizenych):
-    self.jmeno = jmeno
-    self.pozice = pozice
-    self.pocet_podrizenych = pocet_podrizenych
-    self.pocet_dni_dovolene = 25
+    def __init__(self, jmeno, pozice, pocet_podrizenych):
+        self.jmeno = jmeno
+        self.pozice = pozice
+        self.pocet_podrizenych = pocet_podrizenych
+        self.pocet_dni_dovolene = 25
 ```
 
 Zkusíme si nyní vytvořit objekt, který bude reprezentovat manažera. U objektu vyzkoušíme, zda u ní funguje metoda `__str__`. Tuto metodu jsme pro třídu `Manazer` neprogramovali, měla by být *zděděná* od třídy `Zamestnanec`.
@@ -28,26 +28,26 @@ Ve skutečnosti ano. Využijeme k tomu speciální funkci `super()`, kterou se o
 
 ```py
 class Manazer(Zamestnanec):
-  def __init__(self, jmeno, pozice, pocet_podrizenych):
-    super().__init__(jmeno, pozice)
-    self.pocet_podrizenych = pocet_podrizenych
+    def __init__(self, jmeno, pozice, pocet_podrizenych):
+        super().__init__(jmeno, pozice)
+        self.pocet_podrizenych = pocet_podrizenych
 ```
 
 Pojďme ještě upravit výpis informace pomocí metody `__str__`. U třídy `Manazer` budeme chtít do výpisu přidat informaci o tom, kolik má manažer podřízených. Opět můžeme pomocí funkce `super()` zavolat metodu `__str__` z mateřské třídy `Zamestnanec` a připojit k ní větu o počtu podřízených.
 
 ```py
 class Manazer(Zamestnanec):
-  def __init__(self, jmeno, pozice, pocet_podrizenych):
-    super().__init__(jmeno, pozice)
-    self.pocet_podrizenych = pocet_podrizenych
+    def __init__(self, jmeno, pozice, pocet_podrizenych):
+        super().__init__(jmeno, pozice)
+        self.pocet_podrizenych = pocet_podrizenych
 
-  def __str__(self):
-    return super().__str__() + f" Má {self.pocet_podrizenych} podřízených."
+    def __str__(self):
+        return super().__str__() + f" Má {self.pocet_podrizenych} podřízených."
 ```
 
 Vyzkoušíme znovu dvojici příkazů, kterou jsme zkoušeli předtím.
 
-```python
+```py
 boss = Manazer("Marian Přísný", "vedoucí konstrukčního oddělení", 5)
 print(boss)
 ```
@@ -61,31 +61,31 @@ Marian Přísný pracuje na pozici vedoucí konstrukčního oddělení. Má 5 po
 ```py
 
 class Zamestnanec:
-  def __init__(self, jmeno, pozice):
-    self.jmeno = jmeno
-    self.pozice = pozice
-    self.dovolena = 160
+    def __init__(self, jmeno, pozice):
+        self.jmeno = jmeno
+        self.pozice = pozice
+        self.dovolena = 160
 
-  def __str__(self):
-    return f"{self.jmeno} a pracuje na pozici {self.pozice}"
-  
-  def cerpej_dovolenou(self, pocet_hodin):
-    if self.dovolena >= pocet_hodin:
-      self.dovolena -= pocet_hodin
-      return "Užij si to."
-    else:
-      return f"Máš nárok je na {self.dovolena} hodin."
+    def __str__(self):
+        return f"{self.jmeno} a pracuje na pozici {self.pozice}"
+    
+    def cerpej_dovolenou(self, pocet_hodin):
+        if self.dovolena >= pocet_hodin:
+        self.dovolena -= pocet_hodin
+        return "Užij si to."
+        else:
+        return f"Máš nárok je na {self.dovolena} hodin."
   
 
 class Manazer(Zamestnanec):
-  def __init__(self, jmeno, pozice, pocet_podrizenych):
-    super().__init__(jmeno, pozice)
-    self.pocet_podrizenych = pocet_podrizenych
+    def __init__(self, jmeno, pozice, pocet_podrizenych):
+        super().__init__(jmeno, pozice)
+        self.pocet_podrizenych = pocet_podrizenych
 
-  def __str__(self):
-    text = super().__str__()
-    text = text + f" Počet podřízených: {self.pocet_podrizenych}"
-    return text
+    def __str__(self):
+        text = super().__str__()
+        text = text + f" Počet podřízených: {self.pocet_podrizenych}"
+        return text
 
 
 frantisek = Zamestnanec("František Novák", "konstruktér")
