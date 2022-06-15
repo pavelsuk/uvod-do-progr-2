@@ -43,10 +43,10 @@ class Zamestnanec:
 
     def cerpani_dovolene(self, days):
         if self.pocet_dni_dovolene >= days:
-        self.pocet_dni_dovolene -= days
-        return f"Užij si to."
+            self.pocet_dni_dovolene -= days
+            return f"Užij si to."
         else:
-        return f"Bohužel už máš nárok jen na {self.pocet_dni_dovolene} dní."
+            return f"Bohužel už máš nárok jen na {self.pocet_dni_dovolene} dní."
 ```
 
 Nyní se podívejme, jak budou vyřizovány Františkovy žádosti o dovolenou.
