@@ -3,7 +3,7 @@
 Na příkladu funkce `round` jsme viděli, že u některých funkcí není třeba vyplňovat všechny parametry. Vraťme se k funkci `get_mark()`. Uvažujme nyní, že studenti mají možnost získat bonusové body (např. za odevzdání úkolů), které se pak připočítávají k bodům z testu. 
 
 ```py
-def get_mark(points: int, bonus: int=0):
+def get_mark(points, bonus=0):
     if points + bonus <= 60:
         mark = 5
     elif points + bonus <= 70:
@@ -15,7 +15,6 @@ def get_mark(points: int, bonus: int=0):
     else:
         mark = 1
     return mark
-
 ```
 
 Nyní opět zavoláme funkci. Uvažujeme stále možnost jednoho opravného pokusu, počet bonusových bodů zůstává.
