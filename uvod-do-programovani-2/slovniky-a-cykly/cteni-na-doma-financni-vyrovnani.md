@@ -29,6 +29,7 @@ purchase_list = [
 Útraty jednotlivých spolubydlících si budeme ukládat do nového slovníku. Musíme si tedy nejprve vysvětlit, jak ověřit, jestli nějaká hodnota už ve slovníku je. Pokud spolubydlící v našem novém slovníku ještě částku nemá, vložíme tam hodnotu aktuálního nákupu. Pokud tam nějakou částku už má, přičteme k této částce hodnotu aktuálního nákupu.
 
 ```py
+sum_per_person = {}
 for item in purchase_list:
     person = item["person"]
     value = item["value"]
