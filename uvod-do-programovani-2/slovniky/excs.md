@@ -1,5 +1,5 @@
 ## Cvičení: Slovníky a cykly
-::exc[excs>vysvedceni]
+::exc[excs>vysvedceni-2]
 ::exc[excs>ctenar]
 
 ## Bonusy

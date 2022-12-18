@@ -11,7 +11,7 @@ Dokázali bychom asi odhadnout, že první prvek je název a druhý cena. Co vš
 A přesně toto řeší datový typ slovník (`dict`).
 
 
-# O slovnících
+### O slovnících
 
 Princip slovníků skutečně vychází z papírových slovníků, kde je každý záznam identifikován pomocí nějakého slova a k tomuto slovu jsou přiřazená nějaká data (nejčastěji textový popis). Na podobném principu fungují třeba i muzea, kde exponáty mají štítky s popisky.
 
@@ -108,10 +108,10 @@ sausages.pop("Naty")
 
 Nyní funkce `len` vrátí 4.
 
-# Cvičení
+### Cvičení
 ::exc[excs>vysvedceni]
 ::exc[excs>detektivky]
 ::exc[excs>tombola]
 
-# Bonusy
+### Bonusy
 ::exc[excs>vecirek]
