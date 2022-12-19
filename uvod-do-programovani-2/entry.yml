@@ -1,12 +1,12 @@
 title: Úvod do programování 2
-lead: Úvod do programování 2
+lead: Kapitoly popisující další důležité části programování v Pythonu
 lessons:
   - uvod
+  - slicing-metody-moduly
+  - vlastni-funkce
   - slovniky
-  - funkce
   - soubory
   - json
   - opakovani
   - tridy
   - dedicnost
-  - dalsi-zdroje
