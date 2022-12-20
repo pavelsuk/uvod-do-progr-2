@@ -48,4 +48,6 @@ Víte už, čím to je. Přejmenujte váš skript na jiný název a pokud se vá
 
 ## Cvičení: Moduly
 ::exc[excs>zaokrouhlovani]
-::exc[excs>domena-a-url]
+
+## Bonusy
+::exc[excs>klasicke-zaokrouhlovani]

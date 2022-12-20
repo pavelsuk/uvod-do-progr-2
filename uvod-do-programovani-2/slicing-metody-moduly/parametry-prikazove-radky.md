@@ -31,6 +31,3 @@ Tedy na prvním místě je název programu a na druhém je náš parametr, kter�
 ## Cvičení: Parametry řádky
 ::exc[excs>cas-v-minutach]
 ::exc[excs>prumer-versus-median]
-
-## Bonusy
-::exc[excs>klasicke-zaokrouhlovani]

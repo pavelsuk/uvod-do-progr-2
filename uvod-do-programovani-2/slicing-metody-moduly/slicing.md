@@ -69,3 +69,40 @@ Pro práci se seznamy se nám může hodit několik funkcí:
 
 `sorted()`
 : Vrátí setříděný seznam
+
+
+## Řetězce
+
+Řetězce se chovají v něčem podobně jako čísla a v něčem podobně jako seznamy. Můžeme je například sčítat
+
+```pycon
+>>> jmeno = 'martin' + ' ' + 'podloucký'
+```
+
+Můžeme však také přistupovat k jednotlivým písmenům nebo pracovat s podřetězci.
+
+```pycon
+>>> jmeno[3]
+'t'
+>>> jmeno[:6]
+'martin'
+>>> jmeno[7:]
+'podloucký'
+```
+
+Podobně jako u seznamů můžeme na řetězcích volat také funkci `len()`
+
+```pycon
+>>> len(jmeno)
+16
+```
+
+Jelikož řetězec je opět hodnota jako každá jiná, není problém vyrobit seznam
+řetězců
+
+```pycon
+>>> jmena = ['martin', 'jana', 'petr', 'simona']
+```
+
+## Cvičení
+::exc[excs>domena-a-url]
