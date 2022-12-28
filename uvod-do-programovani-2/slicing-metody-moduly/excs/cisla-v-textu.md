@@ -4,7 +4,7 @@ demand: 2
 ---
 
 Máme obdobné zadání jako v předchozím cvičení, avšak tentokrát máme čísla
-zadána nikoliv v seznamu ale v řetězci oddělená mezerou:
+zadána nikoliv v seznamu, ale v řetězci oddělená mezerou:
 
 ```py
 hodnoty = '12.1 1.68 7.45 -11.51'
