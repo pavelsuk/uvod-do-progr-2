@@ -2,7 +2,7 @@
 
 Poslední kapitolou, kterou si zopakujeme, jsou cykly. Cykly jsou způsob, jak programu říct, aby opakoval nějakou činnost.
 
-Ideální je využití cyklů spolu s kolekcemi. Pro každý prvek kolekce provedeme nějakou činnost. Uvažujme například vysvědčení studenta základní školy.
+Ideální je využití cyklů spolu s sekvencemi. Pro každý prvek sekvence provedeme nějakou činnost. Uvažujme například vysvědčení studenta základní školy.
 
 ```py
 school_report = [
@@ -25,14 +25,13 @@ Nejprve si zkusme vypočítat průměrnou známku studenta na vysvědčení.
 sum_of_marks = 0
 for mark in school_report:
     sum_of_marks += mark[1]
-average = round(sum_of_marks/len(school_report), 2)
+average = round(sum_of_marks / len(school_report), 2)
 print(f"Průměrná známka studenta je {average}.")
 ```
 
 Dále můžeme například vypsat všechny předměty, které jsou pro studenta problematické, tj. ty, ze kterých má známku horší než trojku.
 
 ```py
-problematic_subjects = []
 print("Pro studenta jsou problematické tyto předměty:")
 for mark in school_report:
     if mark[1] > 3:

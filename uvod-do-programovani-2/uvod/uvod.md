@@ -2,7 +2,7 @@
 
 Během workshopu Úvod do programování 2 - Python se ponoříme o něco hlouběji do tajů programování a podíváme se, jaké další možnosti nabízí jazyk Python. Na začátku bychom si ale měli zopakovat věci, které jsme již probírali na kurzu Úvod do programování 1, případně je známe odjinud.
 
-**Před workshopem si prosím nainstaluj Python a Visual Studio Code na svůj počítač. Návod najdeš [zde](http://kodim.cz/kurzy/uvod-do-progr/jazyky-nastroje/).**
+**Před workshopem si prosím nainstaluj Python a Visual Studio Code na svůj počítač. Návod najdeš [zde](https://kodim.cz/kurzy/uvod-do-progr-1/priprava/jazyky-nastroje/).**
 
 Na této stránce najdeš několik příkladů. Nejlepší způsob, jak si svoje znalosti procvičit, je zkopírovat si kódy příkladů do Visual Studia Code nebo jiného editoru a zkusit si, co dělají. Neboj se ani příklady modifikovat a změnit jejich funkci, v textu najdeš spoustu námětů. Nemůžeš při tom nic rozbít, maximálně si kód ze stránky zkopíruješ znovu.
 
@@ -39,7 +39,7 @@ total_price = number_of_tickets * price_per_ticket
 print(total_price)
 ```
 
-Python bere náš vstup jako řetězec a pokud jej násobíme číslem, udělá standardní operaci při násobení čísla a řetězce - 345krát zopakuje daný text. Následující program už bude fungovat tak, jak čekáme.
+Python bere náš vstup jako řetězec a pokud jej násobíme číslem, udělá standardní operaci při násobení čísla a řetězce - 345krát zopakuje daný text. Následující program už bude fungovat tak, jak čekáme:
 
 ```py
 number_of_tickets = input("Kolik si přejete lístků? ")
@@ -65,7 +65,7 @@ total_price = price_per_ticket * number_of_tickets
 print("Cena " + str(number_of_tickets) + " lístků na hru " + play + " je celkem " + str(total_price) + " Kč.")
 ```
 
-Relativně novou vlastností Pythonu je možnost využívání f-stringů. Důležité je před uvozovky vložit písmeno `f`. Poté můžeme vkládat do složených závorek přímo názvy proměnných, nemusíme tedy používat znaménka `+`. Navíc za nás Python automaticky obstará i převod čísel na `string`, není tedy třeba používat funkci `str()`.
+Relativně novou vlastností Pythonu je možnost využívání _formátovaných řetězců_ neboli f-stringů. Před uvozovky vložíme písmeno `f`. Poté můžeme vkládat do složených závorek přímo názvy proměnných, nemusíme tedy používat znaménka `+`. Navíc za nás Python automaticky obstará i převod na `string`, není tedy třeba používat funkci `str()`.
 
 ```py
 print(f"Cena {number_of_tickets} lístků na hru {play} je celkem {total_price} Kč.")

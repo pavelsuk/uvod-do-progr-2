@@ -29,7 +29,7 @@ Seznamy zapisujeme do hranatých závorek. Do seznamu můžeme vložit libovoln�
 guest_list = ["Jirka", "Klára", "Natálie"]
 ```
 
-Chceme-li přidat jednu položku do seznamu, použijeme funkce `append`.
+Chceme-li přidat jednu položku do seznamu, použijeme funkci `append`.
 
 ```py
 new_guest = input("Zadej jméno dalšího hosta: ")
@@ -39,7 +39,7 @@ print(guest_list)
 
 **Námět:** Vypiš uživateli informaci o počtu hostů v seznamu. Můžeš použít funkci `len`.
 
-Chceme-li si ověřit, zda je nějaká hodnota v seznamu, můžeme použít operátor in.
+Chceme-li si ověřit, zda je nějaká hodnota v seznamu, můžeme použít operátor `in`.
 
 ```py
 incoming_person = input("Zadej jméno příchozího hosta: ")
