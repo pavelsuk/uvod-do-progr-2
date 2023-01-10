@@ -52,11 +52,10 @@ with open('hodiny.json', mode='w', encoding='utf-8') as soubor:
 
 Pokud bychom z nějakého důvodu chtěli pouze vytvořit řetězec obsahující JSON ale nezapisovat jej do souboru, můžeme použít funkci `json.dumps`.
 
-```pycon
->>> hodiny = {'po': 8, 'ut': 7, 'st': 6, 'ct': 7, 'pa': 8}
->>> import json
->>> json.dumps(hodiny)
-'{"po": 8, "ut": 7, "st": 6, "ct": 7, "pa": 8}'
+```py
+import json
+hodiny = {'po': 8, 'ut': 7, 'st': 6, 'ct': 7, 'pa': 8}
+print(json.dumps(hodiny))  # '{"po": 8, "ut": 7, "st": 6, "ct": 7, "pa": 8}'
 ```
 
 ### Stahování dat z internetu

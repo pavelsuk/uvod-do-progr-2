@@ -11,7 +11,7 @@ Moduly jsou v podstatě balíčky funkcí zaměřených na nějaké konkrétní 
 
 Prvním velmi užitečným balíčkem funkcí je modul `math`. Importujeme jej příkazem
 
-```pycon
+```py
 import math
 ```
 
@@ -19,18 +19,16 @@ který napíšeme na začátek našeho programu. Pokud pracujeme v Python konzol
 
 Kromě mnoha jiných obsahuje modul `math` funkce `ceil()` a `floor()`, které zaokrouhlují buď vždy jen dolů nebo jen nahoru. Abychom je mohli zavolat, musíme použít tečkovou notaci.
 
-```pycon
->>> math.ceil(3.1)
-4
->>> math.floor(3.7)
-3
+```py
+print(math.ceil(3.1))  # 4
+print(math.floor(3.7))  # 3
 ```
 
 Mnozí z vás už si stěžovali, že Python neobsahuje funkci, která počítá průměr. Nyní takovou funkci můžeme získat, pokud importujeme modul `statistics`. Tento modul obsahuje mimo jiné funkci `mean()`, která počítá vytoužený průměr.
 
-```pycon
->>> import statistics
->>> statistics.mean([1, 2, 3, 4, 5, 6])
+```py
+import statistics
+print(statistics.mean([1, 2, 3, 4, 5, 6]))  # 3.5
 3.5
 ```
 
