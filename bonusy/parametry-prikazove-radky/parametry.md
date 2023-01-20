@@ -28,7 +28,7 @@ To nejdůležitější se děje na druhém řádku, kde používáme hodnotu `sy
 
 Tedy na prvním místě je název programu a na druhém je náš parametr, který jsme prve zadali na příkazové řádce. Všimněte si ovšem, že náš parametr je řetězec. Python totiž všechny parametry na příkazové řádce bere jako řetězce, nehledě na to, jestli jsou to čísla nebo cokoliv jiného. My chceme ale v našem programu čas jako číslo, neboť s ním chceme provádět různá matematická cvičení. Proto musíme náš parametr převést na číslo pomocí již známé funkce `int()`, což právě provádíme na druhém řádku našeho programu.
 
-### Cvičení: Parametry příkazové řádky
+## Cvičení: Parametry příkazové řádky
 ::exc[excs>cas-v-minutach]
 ::exc[excs>uprava-retezce]
 ::exc[excs>hada-na-velblouda]
