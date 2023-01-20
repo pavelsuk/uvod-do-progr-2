@@ -1,5 +1,3 @@
-V minulé lekci jsme se bavili o tom, jak dostat do našeho programu data pomocí parametrů příkazové řádky. Takový způsob ale brzy narazí na své limity především proto, že na příkazovou řádku se nám vejde jen pár hodnot. Proto dnes přejdeme k druhému způsobu předávání dat do našeho programu a tím je čtení souborů na disku.
-
 ## Čtení ze souborů
 
 V praxi často máme data uložena v nějakém souboru na disku v nějakém textovém formátu. Ukážeme si, jak takový soubor v Pythonu otevřít a data z něj přečíst.
