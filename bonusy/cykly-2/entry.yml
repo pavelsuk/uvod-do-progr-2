@@ -4,4 +4,5 @@ sections:
   - cyklus-s-ciselnou-radou
   - preruseni-cyklu
   - excs
-  - cteni-na-doma
+  - cyklus-while
+  - list-comprehension

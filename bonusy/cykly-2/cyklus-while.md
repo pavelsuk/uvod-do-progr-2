@@ -1,9 +1,5 @@
-## Čtení na doma
-
-Aby byl tento text co nejkompletnější, je třeba zmínit i cyklus `while` a příkaz `continue`.
-
-### Cyklus `while`
-Nejdříve si pro zopakování probereme, že cyklus `for` slouží k procházení složených datových typů. Při procházení seznamů získáváme přístup ke každému prvku seznamu. Při procházení řetězců se jedná o každé písmeno. Cyklus `for` využíváme i při procházení slovníků a pro velmi mnoho dalších případů (např. procházení otevřených souborů po řádcích).
+## Cyklus `while`
+Aby byl tento text co nejkompletnější, je třeba zmínit i cyklus `while` a příkaz `continue`. Nejdříve si pro zopakování probereme, že cyklus `for` slouží k procházení složených datových typů. Při procházení seznamů získáváme přístup ke každému prvku seznamu. Při procházení řetězců se jedná o každý znak. Cyklus `for` využíváme i při procházení slovníků a pro velmi mnoho dalších případů (např. procházení otevřených souborů po řádcích).
 
 Naproti tomu, cyklus `while` je obecný cyklus a svou konstrukcí má blíže k podmínce `if`. U podmínky `if` platí, že odsazený blok po podmínce `if` se provede, pokud se samotná podmínka, tj. výraz mezi `if` a dvojtečkou vyhodnotí jako `True`.
 
