@@ -2,6 +2,7 @@
 ::exc[excs>nasobeni]
 ::exc[excs>hotel]
 ::exc[excs>ramecek]
+::exc[excs>zarovnani]
 
 ## Bonusy
 ::exc[excs>narozeni]
