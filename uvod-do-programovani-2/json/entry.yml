@@ -2,3 +2,4 @@ title: JSON
 lead: Díky formátu JSON je můžeme snadno ukládat nebo například stahovat z internetu.
 sections:
   - format-json
+  - json-api
