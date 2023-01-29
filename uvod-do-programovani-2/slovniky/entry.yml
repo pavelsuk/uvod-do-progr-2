@@ -1,7 +1,9 @@
-title: Slovníky
-lead: Slovníky jsou nový typ kolekcí, které umožňují ukládat data spolu s popiskami.
+title: Další datové struktury
+lead: N-tice, množiny a slovníky jsou nový typ kolekcí, které umožňují ukládat více dat.
 sections:
-  - uvod
+  - n-tice
+  - mnoziny
+  - slovniky
   - slovniky-a-cykly
   - dvourozmerne-tabulky
   - excs
