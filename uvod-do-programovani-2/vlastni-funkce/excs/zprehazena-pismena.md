@@ -17,6 +17,8 @@ znaky kromě prvního a posledního.
 '''
 ```
 
+Výstup:
+
 ```shell
 Slvoo je sátle mnžoé pdhlnooě pseířčt, když jsou pcnhíoamá psímnea. 
 Stčaí, kydž pvrní a ponsldeí pmínseo je na své pozcii znaáhvoco. Nipaš fcnkui, 

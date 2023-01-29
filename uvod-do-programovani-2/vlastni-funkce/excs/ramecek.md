@@ -12,6 +12,6 @@ Zadej slovo: ahoj
 ********
 ```
 
-Nápověda: 8 * '*' = '********'
+Nápověda: `8 * '*' == '********'`
 
 Bonus: Znak, kterým se má text obalit, bude zadán také jako parametr.
