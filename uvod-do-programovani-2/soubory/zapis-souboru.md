@@ -8,6 +8,7 @@ Dejme tomu, že máme seznam uživatelů, které chceme zapsat do souboru `uziva
 
 ```py
 jmena = ['Roman', 'Jana', 'Radek', 'Petra', 'Vlasta']
+
 with open('uzivatele.txt', mode='w', encoding='utf-8') as vystup:
     vystup.writelines(jmena)
 ```
@@ -16,7 +17,7 @@ Změna je u druhého parametru `mode='w'` při volání funkce `open()`. Díky n
 
 Pokud však otevřete soubor, který vytvořil náš předchozí program, uvidíte následující výsledek
 
-```
+```shell
 RomanJanaRadekPetraVlasta
 ```
 
@@ -25,10 +26,26 @@ automatické odřádkování. Dopíšeme tedy konce řádků k jednotlivým jmé
 Upravíme tedy zápis do souboru v našem předchozím programu takto:
 
 ```py
-jmena = [jmeno + '\n' for jmeno in jmena]
+jmena = ['Roman', 'Jana', 'Radek', 'Petra', 'Vlasta']
+
 with open('uzivatele.txt', mode='w', encoding='utf-8') as vystup:
-    vystup.writelines(jmena)
+    for jmeno in jmena:
+        vystup.write(jmeno + '\n')
 ```
+
+### Bonusová znalost
+
+Zapisovat do souboru lze i funkcí `print()`, pokud jako volitelný parametr `file` nastavíte náš otevřený soubor:
+
+```py
+jmena = ['Roman', 'Jana', 'Radek', 'Petra', 'Vlasta']
+
+with open('uzivatele.txt', mode='w', encoding='utf-8') as vystup:
+    for jmeno in jmena:
+        print(jmeno, file=vystup)
+```
+
+Funkce `print()` v základním nastavení udělá odřádkování, takže oba způsoby dělají stejnou věc. Můžete používat, co se vám víc líbí.
 
 ## Cvičení: Zápis do souborů
 ::exc[excs>rozepsana-vyplata]
