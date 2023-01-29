@@ -5,7 +5,7 @@ Python patří mezi *dynamicky typové jazyky*, což znamená, že při vytvoře
 Níže je příklad funkce `get_mark()` s typováním. Typovat můžeme jednotlivé parametry i návratovou hodnotu, jejíž typ je za "šipkou" `->`.
 
 ```py
-def get_mark(points: int, bonus: int=0) -> int:
+def get_mark(points: int, bonus: int = 0) -> int:
     if points + bonus <= 60:
         mark = 5
     elif points + bonus <= 70:
