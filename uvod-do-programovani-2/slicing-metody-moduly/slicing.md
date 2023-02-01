@@ -95,4 +95,8 @@ jmena = ['martin', 'jana', 'petr', 'simona']
 ```
 
 ## Cvičení
-::exc[excs>domena-a-url]
+::exc[excs>pohyby-na-uctu]
+::exc[excs>prumer]
+::exc[excs>rozpeti]
+::exc[excs>stred-seznamu]
+::exc[excs>stred-seznamu-2]

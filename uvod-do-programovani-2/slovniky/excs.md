@@ -4,3 +4,4 @@
 
 ## Bonusy
 ::exc[excs>spz]
+::exc[excs>recepty]
