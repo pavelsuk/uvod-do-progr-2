@@ -41,7 +41,7 @@ Rozmyslete si, co vypíšou následující výrazy:
 
 ```py
 print(seznam[0][1])
-print(seznam[2][0])     
+print(seznam[2][0])
 print(seznam[1:][1])
 print(seznam[:1][2])
 ```
@@ -94,9 +94,11 @@ Jelikož řetězec je opět hodnota jako každá jiná, není problém vyrobit s
 jmena = ['martin', 'jana', 'petr', 'simona']
 ```
 
-## Cvičení
+## Cvičení: Seznamy
 ::exc[excs>pohyby-na-uctu]
 ::exc[excs>prumer]
 ::exc[excs>rozpeti]
+
+## Bonusy
 ::exc[excs>stred-seznamu]
 ::exc[excs>stred-seznamu-2]
