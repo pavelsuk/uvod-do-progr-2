@@ -1,6 +1,6 @@
 ## Čtení na doma: Pokročilá práce s výjimkami v Pythonu
 
-Pro úplnost doplním, že je možné odchytávat více chyb v jednom bloku `except`. Tyto chyby jsou oddělený čárkou **musí** a být v závorkách, aby tvořily <term cs="n-tici" en="tuple">. Rozšířením bloku `except` o klíčové slov `as` si můžeme název chyby uložit do proměnné. V Pythonu je možný i mechanismus odchytávání všech možných chyb v jednom bloku `except`, ale to patří k zavrženíhodným programátorským technikám, a proto si to ani nebudeme ukazovat.
+Pro úplnost doplním, že je možné odchytávat více chyb v jednom bloku `except`. Tyto chyby jsou oddělený čárkou **musí** a být v závorkách, aby tvořily :term{cs="n-tici" en="tuple"}. Rozšířením bloku `except` o klíčové slov `as` si můžeme název chyby uložit do proměnné. V Pythonu je možný i mechanismus odchytávání všech možných chyb v jednom bloku `except`, ale to patří k zavrženíhodným programátorským technikám, a proto si to ani nebudeme ukazovat.
 
 ```python
 import sys

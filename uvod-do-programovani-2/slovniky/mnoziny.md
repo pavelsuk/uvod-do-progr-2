@@ -1,6 +1,6 @@
 ## Množiny
 
-Datový typ <term cs="množina" en="set"> umožňuje uložit více prvků do jedné struktury, kde je každý prvek uložen pouze jednou. Do seznamu přidáváme prvky metodou `append()`. U množin k tomu slouží metoda `add()`. Další hlavní rozdíl je ten, že pořadí prvků je u seznamů a n-tic zaručeno (stejně jako pořadí znaků v řetězci), ale u množin pevné pořadí není. Není možné množinu ani indexovat.
+Datový typ :term{cs="množina" en="set"} umožňuje uložit více prvků do jedné struktury, kde je každý prvek uložen pouze jednou. Do seznamu přidáváme prvky metodou `append()`. U množin k tomu slouží metoda `add()`. Další hlavní rozdíl je ten, že pořadí prvků je u seznamů a n-tic zaručeno (stejně jako pořadí znaků v řetězci), ale u množin pevné pořadí není. Není možné množinu ani indexovat.
 
 ```py
 names = set()
