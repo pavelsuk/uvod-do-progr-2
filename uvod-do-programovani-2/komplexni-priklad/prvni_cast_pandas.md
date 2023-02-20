@@ -35,11 +35,11 @@ Další možností je použití chatovacího bota ChatGPT. Jeho určitou výhodo
 
 Zkusme položit dotaz: "Používám modul pandas a mám data uložená v sérii. Jak můžu spočítat, kolikrát se tam každá hodnota vyskytuje?" Výsledek je vidět na obrázcích níže. ChatGPT nám nejprve doporučí použití metody `value_counts()`, což je stejná metoda, kterou nám doporučují i výsledky ve vyhledávači. Zdá se tedy, že jdeme správným směrem. Dále pro nás ChatGPT vytvořil ukázkový kód.
 
-::fig[Odpověď chatovacího bota 1]{src=assets/chat_gpt_1}
+::fig[Odpověď chatovacího bota 1]{src=assets/chat_gpt_1.png}
 
 A nakonec zobrazí i výsledky, které ukázkový kód vypíše.
 
-::fig[Odpověď chatovacího bota 1]{src=assets/chat_gpt_2}
+::fig[Odpověď chatovacího bota 1]{src=assets/chat_gpt_2.png}
 
 Oba zdroje nás tedy navedkou k tomu, že použití metody `value_counts()` je velmi jednoduché, stačí pouze napsat
 
