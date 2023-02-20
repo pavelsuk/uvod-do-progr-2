@@ -1,28 +1,49 @@
 ## Čtení na doma - finanční vyrovnání
 
-Vraťme se nyní k našemu úplně prvnímu příkladu - finančnímu vyrovnání spolubydlících. Slovníky by nám zde mohly pomoci, protože nám pomůžou při tvorbě tabulky s celkovou útratou za jednotlivé spolubydlící.
+Představte si šest spolubydlících: Libora, Zuzku, Patra, Pavlu, Ondru a Míšu. Žijí v jednom bytě a dělí se o náklady na společně používané věci jako je toaletní papír, mýdlo, prací prášek apod. Postupně svoje útraty zapisují do tabulky, která může vypadat například takto:
+
+| Jméno | Položka | Částka |
+| ------ | ---- | ----- |
+| Petr   | Prací prášek | 399 |
+| Ondra  | Savo | 80 |
+| Petr   | Toaletní papír | 65 |
+| Libor  | Pivo | 124 |
+| Petr   | Pytel na odpadky | 75 |
+| Míša   | Utěrky na nádobí | 130 |
+| Ondra  | Toaletní papír | 120 |
+| Míša   | Pečící papír | 30 |
+| Zuzka  | Savo | 80 |
+| Pavla  | Máslo | 50 |
+| Ondra  | Káva | 300 |
+
+
+Dejme tomu, že uplynulo například půl roku a spolubydlící se chtějí navzájem finančně vyrovnat. Vaším úkolem je vymyslet přesný postup, který mají následovat, aby došlo k celkovému vyrovnání všech lidí.
+
+### Řešení s využitím slovníků
+
+Slovníky by nám zde mohly pomoci, protože nám pomůžou při tvorbě tabulky s celkovou útratou za jednotlivé spolubydlící.
 
 Jeden nákup zapsaný do slovníku vypadá například takto:
 
 ```py
-{"person": "Petr", "item": "Prací prášek", "value": 399}
+{"Jméno": "Petr", "Položka": "Prací prášek", "Částka": 399}
 ```
 
 Protože nákupů bylo více, jeden slovník by nám nestačil. Proto vytvoříme více slovníků a ty uložíme do seznamu.
 
 ```py
 purchase_list = [
-    {"person": "Petr", "item": "Prací prášek", "value": 399},
-    {"person": "Ondra", "item": "Savo", "value": 80},
-    {"person": "Petr", "item": "Toaletní papír", "value": 65},
-    {"person": "Libor", "item": "Pivo", "value": 124},
-    {"person": "Petr", "item": "Pytel na odpadky", "value": 75},
-    {"person": "Míša", "item": "Utěrky na nádobí", "value": 130},
-    {"person": "Ondra", "item": "Toaletní papír", "value": 120},
-    {"person": "Míša", "item": "Pečící papír", "value": 30},
-    {"person": "Zuzka", "item": "Savo", "value": 80},
-    {"person": "Pavla", "item": "Máslo", "value": 50},
-    {"person": "Ondra", "item": "Káva", "value": 300}
+    {"Jméno": "Petr", "Položka": "Prací prášek", "Částka": 399},
+    {"Jméno": "Ondra", "Položka": "Savo", "Částka": 80},
+    {"Jméno": "Petr", "Položka": "Toaletní papír", "Částka": 65},
+    {"Jméno": "Libor", "Položka": "Pivo", "Částka": 124},
+    {"Jméno": "Petr", "Položka": "Pytel na odpadky", "Částka": 75},
+    {"Jméno": "Míša", "Položka": "Utěrky na nádobí", "Částka": 130},
+    {"Jméno": "Ondra", "Položka": "Toaletní papír", "Částka": 120},
+    {"Jméno": "Míša", "Položka": "Pečící papír", "Částka": 30},
+    {"Jméno": "Zuzka", "Položka": "Savo", "Částka": 80},
+    {"Jméno": "Pavla", "Položka": "Máslo", "Částka": 50},
+    {"Jméno": "Ondra", "Položka": "Káva", "Částka": 300}
 ]
 ```
 
@@ -31,8 +52,8 @@ purchase_list = [
 ```py
 sum_per_person = {}
 for item in purchase_list:
-    person = item["person"]
-    value = item["value"]
+    person = item["Jméno"]
+    value = item["Položka"]
     if person in sum_per_person:
         sum_per_person[person] += value
     else:
