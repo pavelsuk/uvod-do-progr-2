@@ -20,7 +20,7 @@ Každá proměnná má nějaký datový typ. Datových typů jsme poznali celkem
 |------------|--------------------|-----------------|
 | celé číslo |  `int` | `10`, `- 100` |
 | desetinné číslo | `float`  | `5.0`, `-8.6`, `130.4582`
-| řetězec | `string` | `"Kolik třešní, tolik višní"`
+| řetězec | `str` | `"Kolik třešní, tolik višní"`
 | pravdivostní hodnota | `bool` | `True`, `False`
 | seznam | `list` | `[1, True, "Test", 3.3]`, `[1, 4, 8, 13]`
 
@@ -65,7 +65,7 @@ total_price = price_per_ticket * number_of_tickets
 print("Cena " + str(number_of_tickets) + " lístků na hru " + play + " je celkem " + str(total_price) + " Kč.")
 ```
 
-Relativně novou vlastností Pythonu je možnost využívání _formátovaných řetězců_ neboli f-stringů. Před uvozovky vložíme písmeno `f`. Poté můžeme vkládat do složených závorek přímo názvy proměnných, nemusíme tedy používat znaménka `+`. Navíc za nás Python automaticky obstará i převod na `string`, není tedy třeba používat funkci `str()`.
+Relativně novou vlastností Pythonu je možnost využívání _formátovaných řetězců_ neboli f-stringů. Před uvozovky vložíme písmeno `f`. Poté můžeme vkládat do složených závorek přímo názvy proměnných, nemusíme tedy používat znaménka `+`. Navíc za nás Python automaticky obstará i převod na `str`, není tedy třeba používat funkci `str()`.
 
 ```py
 print(f"Cena {number_of_tickets} lístků na hru {play} je celkem {total_price} Kč.")

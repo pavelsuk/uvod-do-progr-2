@@ -22,6 +22,6 @@ Výstup:
 ```shell
 Slvoo je sátle mnžoé pdhlnooě pseířčt, když jsou pcnhíoamá psímnea. 
 Stčaí, kydž pvrní a ponsldeí pmínseo je na své pozcii znaáhvoco. Nipaš fcnkui, 
-kretý bude mít jkao vsntpuí paaremtr solvo a vátrí solvo, kde zhpezáří všhecny 
+kretá bude mít jkao vsntpuí paaremtr solvo a vátrí solvo, kde zhpezáří všhecny 
 zanky krmoě pírhnvo a plísoednho.
 ```
