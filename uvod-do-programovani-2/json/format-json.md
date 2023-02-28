@@ -20,9 +20,9 @@ V Pythonu je velice jednoduché převést JSON na obyčejný Python slovník. St
 
 ```py
 import json
-with open('absolventi.json', encoding='utf-8') as soubor:
-    absolventi = json.load(soubor)
-print(absolventi)
+with open('absolventi.json', encoding='utf-8') as file:
+    absolvents = json.load(file)
+print(absolvents)
 ```
 
 ### Zápis JSON dat
@@ -31,9 +31,9 @@ Zápis JSON dat do souboru je podobně jednoduché jako čtení. Stačí si osvo
 
 ```py
 import json
-hodiny = {'po': 8, 'ut': 7, 'st': 6, 'ct': 7, 'pa': 8}
-with open('hodiny.json', mode='w', encoding='utf-8') as soubor:
-    json.dump(hodiny, soubor)
+hours = {'po': 8, 'ut': 7, 'st': 6, 'ct': 7, 'pa': 8}
+with open('hodiny.json', mode='w', encoding='utf-8') as file:
+    json.dump(hours, file)
 ```
 
 #### Diakritika v JSON
@@ -44,8 +44,55 @@ Funkce `json.dump()` ve výchozím nastavení překóduje non-ASCI znaky do jeji
 import json
 data = {"řeřicha": "Česká Třebová"}
 
-with open("rericha.json", mode="w", encoding="utf-8") as vystupni_soubor:
-    json.dump(data, vystupni_soubor)  # soubor obsahuje {"\u0159e\u0159icha": "\u010cesk\u00e1 T\u0159ebov\u00e1"}
+with open("rericha.json", mode="w", encoding="utf-8") as output_file:
+    json.dump(data, output_file)  # soubor obsahuje {"\u0159e\u0159icha": "\u010cesk\u00e1 T\u0159ebov\u00e1"}
 ```
 
 Pokud chceš mít výstupní JSON v plném kódování UTF-8, lze toho dosáhnout volitelným parametrem `ensure_ascii=False`.
+
+
+## Složitější JSON struktury
+
+JSON podporuje vzájemné zanořování slovníků a seznamů, a tím podporuje široké možnosti pro reprezentaci hierarchických dat. Takto bychom mohli reprezentovat například kurz Czechitas jménem Úvod do programování.
+
+```json
+{
+    "nazev": "Úvod do programování",
+    "lektor": "Martin Podloucký",
+    "konani": [
+        {
+            "misto": "T-Mobile",
+            "koucove": [
+                "Dan Vrátil",
+                "Filip Kopecký",
+                "Martina Nemčoková"
+            ],
+            "ucastnic": 30
+        },
+        {
+            "misto": "MSD IT",
+            "koucove": [
+                "Dan Vrátil",
+                "Zuzana Tučková",
+                "Martina Nemčoková"
+            ],
+            "ucastnic": 25
+        },
+        {
+            "misto": "Škoda DigiLab",
+            "koucove": [
+                "Dan Vrátil",
+                "Filip Kopecký",
+                "Kateřina Kalášková"
+            ],
+            "ucastnic": 41
+        }
+    ]
+}
+```
+
+Všimněte si, jak obsah JSON souboru představující jeden kurz, obsahuje pod klíčem `konani` seznam dalších slovníků. Každý z nich reprezentuje jedno konání kurzu a dále obsahuje například seznam koučů atd.
+
+
+## Cvičení: JSON
+::exc[excs>kurz]

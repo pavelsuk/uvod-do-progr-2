@@ -1,6 +1,6 @@
 ---
 title: Rámeček
-demand: 2
+demand: 3
 ---
 
 Napiš funkci, která jako parametr převezme řetězec a vytiskne jej obalen hvězdičkami.

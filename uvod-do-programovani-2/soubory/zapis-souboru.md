@@ -7,10 +7,10 @@ Zápis do souboru se provádí pomocí metody `write()`. Ta jako svůj parametr 
 Dejme tomu, že máme seznam uživatelů, které chceme zapsat do souboru `uzivatele.txt`.
 
 ```py
-jmena = ['Roman', 'Jana', 'Radek', 'Petra', 'Vlasta']
+names = ['Roman', 'Jana', 'Radek', 'Petra', 'Vlasta']
 
-with open('uzivatele.txt', mode='w', encoding='utf-8') as vystup:
-    vystup.writelines(jmena)
+with open('uzivatele.txt', mode='w', encoding='utf-8') as output:
+    output.writelines(names)
 ```
 
 Změna je u druhého parametru `mode='w'` při volání funkce `open()`. Díky němu se nám soubor otevře pro zápis. Pokud soubor na disku ještě neexistuje, funkce `open()` jej před otevřením vytvoří. Pokud soubor již existuje, funkce `open()` vymaže před otevřením jeho obsah. Vždy tedy pomocí metody `write()` zapisujeme do prázdného souboru. Pokud bychom chtěli přidat nový obsah na konec souboru, místo `'w'` použijeme `'a'`.
@@ -26,11 +26,11 @@ automatické odřádkování. Dopíšeme tedy konce řádků k jednotlivým jmé
 Upravíme tedy zápis do souboru v našem předchozím programu takto:
 
 ```py
-jmena = ['Roman', 'Jana', 'Radek', 'Petra', 'Vlasta']
+names = ['Roman', 'Jana', 'Radek', 'Petra', 'Vlasta']
 
-with open('uzivatele.txt', mode='w', encoding='utf-8') as vystup:
-    for jmeno in jmena:
-        vystup.write(jmeno + '\n')
+with open('uzivatele.txt', mode='w', encoding='utf-8') as output:
+    for name in names:
+        output.write(name + '\n')
 ```
 
 ### Bonusová znalost
@@ -38,11 +38,11 @@ with open('uzivatele.txt', mode='w', encoding='utf-8') as vystup:
 Zapisovat do souboru lze i funkcí `print()`, pokud jako volitelný parametr `file` nastavíte náš otevřený soubor:
 
 ```py
-jmena = ['Roman', 'Jana', 'Radek', 'Petra', 'Vlasta']
+names = ['Roman', 'Jana', 'Radek', 'Petra', 'Vlasta']
 
-with open('uzivatele.txt', mode='w', encoding='utf-8') as vystup:
-    for jmeno in jmena:
-        print(jmeno, file=vystup)
+with open('uzivatele.txt', mode='w', encoding='utf-8') as output:
+    for name in names:
+        print(name, file=output)
 ```
 
 Funkce `print()` v základním nastavení udělá odřádkování, takže oba způsoby dělají stejnou věc. Můžete používat, co se vám víc líbí.

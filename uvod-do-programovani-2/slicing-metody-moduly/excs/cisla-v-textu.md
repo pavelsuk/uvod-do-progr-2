@@ -1,6 +1,6 @@
 ---
 title: Čísla v textu
-demand: 2
+demand: 3
 ---
 
 Máme obdobné zadání jako v předchozím cvičení, avšak tentokrát máme čísla

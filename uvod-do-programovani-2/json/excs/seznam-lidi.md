@@ -1,6 +1,6 @@
 ---
 title: Seznam lidí
-demand: 3
+demand: 2
 ---
 
 Jak už jsme si ověřili v lekci, datové API na adrese `https://api.kodim.cz/python-data/people` obsahuje seznam lidí. Napište program, který tento seznam z API stáhne a převede z formátu JSON na Python slovníky. Proveďte následující úkoly.
