@@ -81,4 +81,3 @@ else:
 
 Všimněte si, že klíčová slova `else` a `elif` jsou vždy zarovnaná stejně jako začátek podmínky, ke které se vztahují.
 
-**Námět:** Zkus program upravit pro případ, že kino nedává slevy v procentech, ale například při nákupu nad 500 Kč má zákazník 1 lístek zdarma a při nákupu nad 1000 Kč má 3 lístky zdarma.

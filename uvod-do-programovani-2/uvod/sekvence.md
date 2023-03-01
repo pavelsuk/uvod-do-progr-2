@@ -19,8 +19,6 @@ else:
 print(f"Uživatel(ka) se narodil(a) v roce {year_of_birth}.")
 ```
 
-**Námět:** Doplň do programu určení pohlaví na základě rodného čísla a vypiš ho. Zkus určit měsíc narození obecně pro obě pohlaví pomocí zbytku po celočíselném dělení (operátor `%`).
-
 ### Seznamy
 
 Seznamy zapisujeme do hranatých závorek. Do seznamu můžeme vložit libovolný datový typ, jaký už známe. Začněme například s řetězci.
@@ -61,5 +59,3 @@ school_marks = [
 print(f"První student(ka) v seznamu je {school_marks[0][0]}.")
 print(f"Její/jeho poslední známka je {school_marks[0][-1]}.")
 ```
-
-**Námět:** Vypiš počet známek nějakého studenta/studentky. Pozor, ať do počtu nezapočítáváš jméno osoby.

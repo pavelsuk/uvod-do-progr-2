@@ -4,7 +4,7 @@ Během workshopu Úvod do programování 2 - Python se ponoříme o něco hloub�
 
 **Před workshopem si prosím nainstaluj Python a Visual Studio Code na svůj počítač. Návod najdeš [zde](https://kodim.cz/kurzy/uvod-do-progr-1/priprava/jazyky-nastroje/).**
 
-Na této stránce najdeš několik příkladů. Nejlepší způsob, jak si svoje znalosti procvičit, je zkopírovat si kódy příkladů do Visual Studia Code nebo jiného editoru a zkusit si, co dělají. Neboj se ani příklady modifikovat a změnit jejich funkci, v textu najdeš spoustu námětů. Nemůžeš při tom nic rozbít, maximálně si kód ze stránky zkopíruješ znovu.
+Na této stránce najdeš několik příkladů. Nejlepší způsob, jak si svoje znalosti procvičit, je zkopírovat si kódy příkladů do Visual Studia Code nebo jiného editoru a zkusit si, co dělají.
 
 ## Proměnné
 

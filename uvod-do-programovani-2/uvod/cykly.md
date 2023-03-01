@@ -37,5 +37,3 @@ for mark in school_report:
     if mark[1] > 3:
         print(mark[0])
 ```
-
-**Námět:** Pro přijetí na střední školu jsou často důležité známky jen z některých předmětů. Vypočítej tedy průměr známek z obou jazyků, matematiky a fyziky. Tip: ulož si tyto předměty do seznamu a použij podmínku s operátorem `in`.
