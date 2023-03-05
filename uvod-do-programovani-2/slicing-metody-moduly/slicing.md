@@ -88,6 +88,22 @@ Podobně jako u seznamů můžeme na řetězcích volat také funkci `len()`.
 print(len(jmeno))
 ```
 
+Můžeme též zkontrolovat, zda se nějaký podřetězec nachází v jiném řetězci. K tomu slouží operátor `in`, který můžeme využít v podmínce.
+
+```py
+inzerat = "Na této pracovní pozici budete využívat Python a SQL"
+if "Python" in inzerat:
+    print("Je to pro mě!")
+```
+
+Podobně můžeme využít i operátor `not in`, který vrací vždy opačný výsledek.
+
+```py
+email = "spatny-mail.cz"
+if "@" not in email:
+    print("V e-mailu chybí zavináč!")
+```
+
 Jelikož řetězec je opět hodnota jako každá jiná, není problém vyrobit seznam řetězců.
 
 ```py
