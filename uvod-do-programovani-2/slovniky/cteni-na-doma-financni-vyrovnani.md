@@ -53,7 +53,7 @@ purchase_list = [
 sum_per_person = {}
 for item in purchase_list:
     person = item["Jméno"]
-    value = item["Položka"]
+    value = item["Částka"]
     if person in sum_per_person:
         sum_per_person[person] += value
     else:
