@@ -64,6 +64,17 @@ print('+'.join(['1', '2', '3', '4']))
 print('/'.join(['dokumenty', 'dapraha', 'python', 'priklady']))
 ```
 
+`replace(old, new)`
+: Nahradí v řetězci výskyty `old` za `new`. Jde o obdobu funkce "najít a nahradit" v textovém editoru.
+
+```py
+text = "Kurz vede lektor Marek"
+novy_text = text.replace("Marek", "Martin")
+print(novy_text)
+```
+
+Výsledkem je text: "Kurz vede lektor Martin".
+
 ## Cvičení: Řetězce, metody
 ::exc[excs>prevod-pismen]
 ::exc[excs>cisla-jako-text]
