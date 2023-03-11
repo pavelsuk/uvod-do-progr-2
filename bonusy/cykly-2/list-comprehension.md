@@ -65,3 +65,24 @@ print(prvni)  # [1, 3, 4, 1, 1, 1]
 
 ## Volitelné úložky na doma
 ::exc[excs>elegantni-volby]
+
+
+## Podmínky v list comprehension
+
+Podmínky slouží k tomu, abychom nějaký kus kódu mohli vykonat jen v případě, že je splněna nějaká podmínka. Doplněním list comprehension o klíčové slovo `if` můžeme ovlivnit, aby se do výsledného seznamu dostaly prvky pouze na základě určité podmínky.
+
+Mějme například seznam uběhnutých kilometrů a chceme z něj jen nenulové hodnoty. Z délky seznamu pak můžeme snadno zjistit počet dní, kdy jsme trénovali.
+
+```py
+ubehnuto = [12, 0, 4, 5, 0, 6]
+nenulove = [beh for beh in ubehnuto if beh != 0]
+print(nenulove)  # [12, 4, 5, 6]
+```
+
+Nebo bychom mohli z následujícího seznamu měst chtít pouze názvy těch měst, která mají nad 50 000 obyvatel.
+
+```py
+mesta = [['Zlín', 76010], ['Jičín', 16792], ['Aš', 13093]]
+velka_mesta = [mesto[0] for mesto in mesta if mesto[1] > 50000]
+print(velka_mesta)  # ['Zlín']
+```
