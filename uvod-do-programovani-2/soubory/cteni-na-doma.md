@@ -41,9 +41,10 @@ Teď už bychom si naivně mohli myslet, že je ve všem pořádek, ale to by by
 Občas programátorům nezbude, než mlátit hlavou do stolu a křičet PROČ? Ale tak je to občas i v životě. Takže nezapomeňte naučit svoje děti, aby vždy ukládaly textové soubory jako UTF-8. Svět pak bude zase o kousek lepším místem.
 
 ## Doporučené úložky na doma
-::exc[excs>pasazeri]
 ::exc[excs>preznamkovani]
+::exc[excs>pasazeri]
 
 ## Volitelné úložky na doma
+::exc[excs>karty-1]
 ::exc[excs>karty-2]
 ::exc[excs>karty-3]

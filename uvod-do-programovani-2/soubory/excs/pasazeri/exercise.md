@@ -1,6 +1,6 @@
 ---
 title: Pasažéři
-demand: 2
+demand: 4
 ---
 
 Autobus mezi Zdebudevsí a Kozoprdy jezdí čtyřikrát denně každý všední den v týdnu. Za poslední týden jsme naměřili počty pasažérů pro každou jízdu tam i zpět. Data jsou uložená v souboru [pasazeri.txt](assets/pasazeri.txt). Jízda vždy obsahuje dvě čísla oddělená čárkou, která udávají počet pasažérů směrem tam a směrem zpět.
