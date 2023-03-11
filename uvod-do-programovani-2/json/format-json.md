@@ -96,3 +96,4 @@ Všimněte si, jak obsah JSON souboru představující jeden kurz, obsahuje pod 
 
 ## Cvičení: JSON
 ::exc[excs>kurz]
+::exc[excs>transformace-dat]
