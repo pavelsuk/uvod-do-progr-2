@@ -29,22 +29,6 @@ print(venecky[:3])
 print(venecky[3:])
 ```
 
-### Vnořené seznamy
-
-Seznam může obsahovat jakékoliv hodnoty, tedy nejen celá čísla. Nezapomeňte, že seznamy jsou také hodnoty, takže jeden seznam může obsahovat jiný seznam jako svůj prvek. Například takto:
-
-```py
-seznam = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-```
-
-Rozmyslete si, co vypíšou následující výrazy:
-
-```py
-print(seznam[0][1])
-print(seznam[2][0])
-print(seznam[1:][1])
-print(seznam[:1][2])
-```
 
 ### Užitečné funkce nad seznamy
 
