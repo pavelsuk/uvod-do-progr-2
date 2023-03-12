@@ -51,49 +51,36 @@ with open("rericha.json", mode="w", encoding="utf-8") as output_file:
 Pokud chceš mít výstupní JSON v plném kódování UTF-8, lze toho dosáhnout volitelným parametrem `ensure_ascii=False`.
 
 
-## Složitější JSON struktury
+### Složitější JSON struktury
 
-JSON podporuje vzájemné zanořování slovníků a seznamů, a tím podporuje široké možnosti pro reprezentaci hierarchických dat. Takto bychom mohli reprezentovat například kurz Czechitas jménem Úvod do programování.
+Ve formátu JSON můžeme narazit i na složitější struktury. Uvažujme výsledky běžeckého závodu, které jsou uložené v souboru [zavod.json](assets/zavod.json). Struktura je složitější tím, že v sobě obsahuje zanořené slovníky. Data si nejprve uložíme do proměnné `runners`.
 
-```json
-{
-    "nazev": "Úvod do programování",
-    "lektor": "Martin Podloucký",
-    "konani": [
-        {
-            "misto": "T-Mobile",
-            "koucove": [
-                "Dan Vrátil",
-                "Filip Kopecký",
-                "Martina Nemčoková"
-            ],
-            "ucastnic": 30
-        },
-        {
-            "misto": "MSD IT",
-            "koucove": [
-                "Dan Vrátil",
-                "Zuzana Tučková",
-                "Martina Nemčoková"
-            ],
-            "ucastnic": 25
-        },
-        {
-            "misto": "Škoda DigiLab",
-            "koucove": [
-                "Dan Vrátil",
-                "Filip Kopecký",
-                "Kateřina Kalášková"
-            ],
-            "ucastnic": 41
-        }
-    ]
-}
+```py
+import json
+with open('zavod.json', encoding='utf-8') as file:
+    runners = json.load(file)
 ```
 
-Všimněte si, jak obsah JSON souboru představující jeden kurz, obsahuje pod klíčem `konani` seznam dalších slovníků. Každý z nich reprezentuje jedno konání kurzu a dále obsahuje například seznam koučů atd.
+Strukturu dat si můžeme pro přehlednost znázornit graficky.
 
+::fig[Struktura slovníku v JSON]{src=assets/Indexování-Slovnik1.drawio.svg}
+
+Do proměnné `winner` si nyní načtěme informace o prvku seznamu na nulté pozici, což jsou data o vítězi závodu.
+
+```py
+winner = runners[0]
+```
+
+Obsah proměnné `winner` si opět můžeme zobrazit graficky.
+
+::fig[Struktura slovníku v JSON]{src=assets/Indexování-Slovnik2.drawio.svg}
+
+I do této struktury se můžeme ponořit hlouběji. Pokud bychom chtěli například zjistit oficiální čas vítěze, napíšeme:
+
+```py
+winner_time = winner["casy"]["oficialni"]
+```
 
 ## Cvičení: JSON
-::exc[excs>kurz]
+::exc[excs>zavod]
 ::exc[excs>transformace-dat]
