@@ -11,13 +11,13 @@ vysledky = [
 ]
 ```
 
-Pojďme si nyní rozkreslit jednotlivé úrovně seznamu. Obrázek v plné velikosti je [zde](assets/Indexování-Page-1.drawio.svg).
+Pojďme si nyní rozkreslit jednotlivé úrovně seznamu. Obrázek v plné velikosti je [zde](assets/Indexovani-Page-1.drawio.svg).
 
-::fig[Indexování 1]{src=assets/Indexování-Page-1.drawio.svg size=100}
+::fig[Indexování 1]{src=assets/Indexovani-Page-1.drawio.svg size=100}
 
-Můžeme se podívat i na [indexování pomocí záporných indexů](assets/Indexování-Page-2.drawio.svg).
+Můžeme se podívat i na [indexování pomocí záporných indexů](assets/Indexovani-Page-2.drawio.svg).
 
-::fig[Indexování 2]{src=assets/Indexování-Page-2.drawio.svg size=100}
+::fig[Indexování 2]{src=assets/Indexovani-Page-2.drawio.svg size=100}
 
 Vyberme ze seznamu běžce na nulté pozici a uložme ho do proměnné `vitez`.
 
@@ -27,7 +27,7 @@ vitez = vysledky[0]
 
 Tím nám "zmizelo" jedno patro.
 
-::fig[Indexování 3]{src=assets/Indexování-Page-3.drawio.svg}
+::fig[Indexování 3]{src=assets/Indexovani-Page-3.drawio.svg}
 
 Nyní do proměnné `cas_viteze` uložíme čas vítěze.
 
@@ -37,7 +37,7 @@ cas_viteze = vysledky[0][1]
 
 Tím nám "zmizelo" další patro a dopracovali jsme se k jednorozměrnému seznamu.
 
-::fig[Indexování 4]{src=assets/Indexování-Page-4.drawio.svg}
+::fig[Indexování 4]{src=assets/Indexovani-Page-4.drawio.svg}
 
 Nyní použijeme **slicing** a vytáhneme si závodníky, kteří byli "na bedně", tj. tři nejrychlejší běžce. To uděláme následujícím příkazem:
 
@@ -47,9 +47,9 @@ vitezove = vysledky[:3]
 
 Tentokrát nám z obrázku "nezmizelo" celé patro. Výběr pomocí rozsahu totiž **zachová dimenzi původního seznamu.** 
 
-::fig[Indexování 5]{src=assets/Indexování-Page-5.drawio.svg size=100}
+::fig[Indexování 5]{src=assets/Indexovani-Page-5.drawio.svg size=100}
 
-Obrázek v plné velikosti je [zde](assets/Indexování-Page-5.drawio.svg).
+Obrázek v plné velikosti je [zde](assets/Indexovani-Page-5.drawio.svg).
 
 ## Cvičení: Vícerozměrné struktury
 ::exc[excs>zavody]
