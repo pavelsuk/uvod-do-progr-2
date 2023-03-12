@@ -32,6 +32,8 @@ print(statistics.mean([1, 2, 3, 4, 5, 6]))  # 3.5
 3.5
 ```
 
+Kompletní popis všech modulů a jejich funkcí najdeš [v dokumentaci](https://docs.python.org/3/library/index.html). 
+
 ### Pozor na názvy skriptů!
 
 **Pozor!** Nikdy nepojmenovávejte svůj skript stejně jako modul, který používáte. Pokud byste pojmenovali svůj skript `math.py`, uvnitř napsali `import math` a používali nějakou funkci z tohoto modulu, Python ji bohužel nenajde. V tu chvíli totiž místo "pravého" modulu `math` naimportoval skript `math.py` ve vašem pracovním adresáři a v něm jistě volanou funkci nemáte definovanou.
@@ -48,4 +50,5 @@ Víte už, čím to je. Přejmenujte váš skript na jiný název a pokud se vá
 ::exc[excs>zaokrouhlovani]
 
 ## Bonusy
-::exc[excs>klasicke-zaokrouhlovani]
+::exc[excs>prijimacky]
+::exc[excs>modus]
