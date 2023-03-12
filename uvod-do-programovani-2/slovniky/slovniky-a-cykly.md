@@ -12,7 +12,15 @@ sales = {
 }
 ```
 
-Zkusme si nejprve vypsat názvy všech knih ve slovníku (bez počtu prodaných kusů). K tomu použijeme cyklus `for`, který již známe. Pomocnou proměnnou si pojmenujeme `key`. Tato proměnná funguje podobně jako u seznamu - postupně se do ní vloží hodnoty jednotlivých klíčů slovníku.
+Data si můžeme představit jako tabulku, kde klíče tvoří názvy knih a hodnota čísla s počtem prodaných kusů.
+
+| key | value |
+|------------|----------------|
+| Zkus mě chytit | 4165 |
+| Vrah zavolá v deset | 5681 |
+| Zločinný steh | 2565 |
+
+Zkusme si nejprve vypsat názvy všech knih ve slovníku (bez počtu prodaných kusů). K tomu použijeme cyklus `for`, který již známe. Pomocnou proměnnou si pojmenujeme `klic`. Tato proměnná funguje podobně jako u seznamu - postupně se do ní vloží hodnoty jednotlivých klíčů slovníku.
 
 ```py
 for key in sales:
@@ -39,6 +47,14 @@ for key, value in sales.items():
     print("Knihy", key, "bylo prodáno", value, "výtisků.")
     # Použití f-stringu
     print(f"Knihy {key} bylo prodáno {value} výtisků.")
-    total_sales += value
+    total_sales = total_sales + value
 print(f"Celkem bylo prodáno {total_sales} výtisků.")
+```
+
+Vedle metody `.items()` existuje i metoda `.values()`, která vrátí hodnoty ze slovníku jako seznam. Tím si můžeme výpočet součtu zjednodušit.
+
+```py
+sales_values = sales.values()
+total_sales = sum(sales_values)
+print(total_sales)
 ```

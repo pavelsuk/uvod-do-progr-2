@@ -10,7 +10,7 @@ Dokázali bychom asi odhadnout, že první prvek je název a druhý cena. Co vš
 
 Princip slovníků skutečně vychází z papírových slovníků, kde je každý záznam identifikován pomocí nějakého slova a k tomuto slovu jsou přiřazená nějaká data (nejčastěji textový popis). Na podobném principu fungují třeba i muzea, kde exponáty mají štítky s popisky.
 
-Na rozdíl od seznamů nemají slovníky indexy, ale **klíče** (`key`). Jako klíče mohou sloužit datové typy `int`, `float`, `bool` `string` (a další, které zatím neznáme). Nejčastěji se přirozeně používají řetězce. Každý klíč má přiřazenou **hodnotu**. Hodnotou může být libovolný datový typ.
+Na rozdíl od seznamů nemají slovníky indexy, ale **klíče** (`key`). Jako klíče mohou sloužit datové typy `int`, `float`, `bool` `str` (a další, které zatím neznáme). Nejčastěji se přirozeně používají řetězce. Každý klíč má přiřazenou **hodnotu**. Hodnotou může být libovolný datový typ.
 
 Vezměme nyní náš seznam s informacemi o položce v e-shopu a převeďme ho na slovník.
 
@@ -23,7 +23,7 @@ Takový zápis je jistě mnohem srozumitelnější. Nyní vidíme, že poslední
 Ze slovníku můžeme snadno získat jednu jeho hodnotu. K tomu použijeme **hranaté závorky**, do kterých zapíšeme klíč.
 
 ```py
-title = item['title']
+title = item["title"]
 ```
 
 Zkusme si třeba vypsat informace o položce.
@@ -73,8 +73,18 @@ item[key] = 929
 Prázdný slovník vytvoříme pomocí prázdných složených závorek, tedy například:
 
 ```py
-item = {}
+empty_dict = {}
 ```
+
+## Cvičení
+::exc[excs>vysvedceni]
+::exc[excs>detektivky]
+::exc[excs>tombola]
+
+## Bonusy
+::exc[excs>vecirek]
+
+### Čtení na doma - odebrání hodnoty
 
 Zkusme si ještě jeden motivační příklad. Uvažujme například, že chystáme firemní výlet a chceme nakoupit špekáčky pro kolegy. Abychom věděli, kolik jich máme celkem koupit, vytvoříme si slovník a pro každého z kolegů a kolegyň si budeme evidovat, kolik špekáčků plánují během výletu sníst.
 
@@ -102,11 +112,3 @@ sausages.pop("Naty")
 ```
 
 Nyní funkce `len` vrátí 4.
-
-## Cvičení
-::exc[excs>vysvedceni]
-::exc[excs>detektivky]
-::exc[excs>tombola]
-
-## Bonusy
-::exc[excs>vecirek]
