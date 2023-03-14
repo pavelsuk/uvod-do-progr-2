@@ -2,16 +2,26 @@
 
 Často se může stát, že potřebujeme nějakým způsobem zpracovat všechny hodnoty v nějakém seznamu a vyrobit tak seznam nový.
 
-Představme si, že zpracováváme známky z písemek, které hodnotili programátoři. Ti místo známek 1 až 5 používali známky 0 až 4.
+Představme si, že zpracováváme známky z písemek, které hodnotili programátoři. Ti místo známek 1 až 5 používali známky 0 až 4. Z takového zápisu nás bolí hlava, takže chceme známky převést do běžného formátu, tedy ke každé z nich přičíst jedničku.
 
 ```py
 pisemky = [0, 2, 0, 1, 1, 3]
+
+pisemky_bezne = []
+for znamka in pisemky:
+    pisemky_bezne.append(znamka + 1)
+
+print(pisemky_bezne)  # [1, 3, 1, 2, 2, 4]
 ```
 
-Z takového zápisu nás bolí hlava, takže chceme známky převést do běžného formátu, tedy ke každé z nich přičíst jedničku. To provedeme pomocí takzvaného _list comprehension_.
+Kratší a přehlednější způsob je pomocí takzvaného _list comprehension_.
 
 ```py
-print([znamka+1 for znamka in pisemky])  # [1, 3, 1, 2, 2, 4]
+pisemky = [0, 2, 0, 1, 1, 3]
+
+pisemky_bezne = [znamka + 1 for znamka in pisemky]
+
+print(pisemky_bezne)  # [1, 3, 1, 2, 2, 4]
 ```
 
 **Poznámka:** Anglický termín _list comprehension_ nemá žádný oficiální český překlad. Čeští programátoři zcela běžně používají tento anglický termín.
@@ -26,7 +36,8 @@ Pokud se pak rozhodneme, že bychom chtěli jen celé kilometry bez desetinných
 čísel, napíšeme
 
 ```py
-print([round(beh) for beh in kilometry])
+zaokrouhleno = [round(beh) for beh in kilometry]
+print(zaokrouhleno)
 ```
 
 ## Seznamy seznamů
