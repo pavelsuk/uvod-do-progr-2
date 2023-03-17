@@ -61,9 +61,9 @@ with open('zavod.json', encoding='utf-8') as file:
     runners = json.load(file)
 ```
 
-Strukturu dat si můžeme pro přehlednost znázornit graficky.
+Strukturu dat si můžeme pro přehlednost znázornit graficky. Obrázek v plné velikosti je [zde](assets/Indexovani-Slovnik1.drawio.svg).
 
-::fig[Struktura slovníku v JSON]{src=assets/Indexování-Slovnik1.drawio.svg}
+::fig[Struktura slovníku v JSON]{src=assets/Indexovani-Slovnik1.drawio.svg}
 
 Do proměnné `winner` si nyní načtěme informace o prvku seznamu na nulté pozici, což jsou data o vítězi závodu.
 
@@ -73,7 +73,7 @@ winner = runners[0]
 
 Obsah proměnné `winner` si opět můžeme zobrazit graficky.
 
-::fig[Struktura slovníku v JSON]{src=assets/Indexování-Slovnik2.drawio.svg}
+::fig[Struktura slovníku v JSON]{src=assets/Indexovani-Slovnik2.drawio.svg}
 
 I do této struktury se můžeme ponořit hlouběji. Pokud bychom chtěli například zjistit oficiální čas vítěze, napíšeme:
 

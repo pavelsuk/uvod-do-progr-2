@@ -22,12 +22,16 @@ with open('mereni.txt', encoding='utf-8') as file:
 print(text)
 ```
 
-Častěji však budeme potřebovat rozdělit soubor na řádky. Celý obsah souboru uložíme do seznamu `lines` pomocí metody `readlines()`. Ta uloží každý řádek souboru jako jeden prvek seznamu.
+Častěji však budeme potřebovat rozdělit soubor na řádky. Využijeme toho, že otevřený soubor můžeme také načítat v cyklu `for`. Do proměnné `line` se nám uloží vždy jeden řádek souboru jako řetězec. Tento způsob má také tu výhodu, že po řádcích můžeme zpracovávat i dost velký soubor, které by se nám jinak nevešel do operační paměti počítače.
 
-Náš kód pak může vypadat například takto:
+Tento kód sice načte celý soubor do paměti, ale pracuje po řádcích, ze kterých vytvoří seznam.
+
 ```py
+lines = []
+
 with open('mereni.txt', encoding='utf-8') as file:
-    lines = file.readlines()
+    for line in file:
+        lines.append(line)
 
 print(lines)
 ```
@@ -40,7 +44,7 @@ Výstup z našeho programu pak bude vypadat takto:
 
 Výstupem je skutečně seznam řetězců, které ale obsahují znaky zpětných lomítek. Tato zpětná lomítka slouží k vyjádření speciálních znaků, které by jinak nešly do řetězce vložit. Anglicko/česky se jim říká _escape sekvence_ a my si představíme základní dvě. Nový řádek se píše jako `'\n'`, tabulátor jako `'\t'`. Existuje jich ještě mnoho dalších, ale tyto nám zatím postačí.
 
-Vidíme tedy, že každý náš řádek končí znakem nového řádku a hodnoty na něm jsou odděleny tabulátorem. Pokud bychom chtěli načtené řádky rozdělit na jednotlivé hodnoty, využijeme toho, že otevřený soubor můžeme také načítat v cyklu `for`. Do proměnné `radek` se nám uloží vždy jeden řádek souboru jako řetězec. Tento způsob má také tu výhodu, že po řádcích můžeme načíst i dost velký soubor, které by se nám jinak nevešel do operační paměti počítače, kdybychom ho načetli pomocí metod `read()` nebo `readlines()`.
+Vidíme tedy, že každý náš řádek končí znakem nového řádku a hodnoty na něm jsou odděleny tabulátorem.
 
 ```py
 output = []
