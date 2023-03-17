@@ -1,5 +1,5 @@
 ---
-title: Přijímačky a moduly
+title: Vánoční party
 demand: 2
 ---
 
