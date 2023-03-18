@@ -21,4 +21,3 @@ tombola = {
 
 - Napiš program, který se nejprve zeptá uživatele na číslo jeho lístku. Vstup uživatele si převeď na `int`!
 - Zkontroluj, zda je číslo lístku ve slovníku. Pokud ne, vypiš text `"Bohužel nevyhráváš nic."` Pokud číslo ve slovníku je, vypiš uživateli, co vyhrál.
-- Odeber výhru pro daný lístek ze slovníku, abychom tam evidovali pouze nevydané ceny.
