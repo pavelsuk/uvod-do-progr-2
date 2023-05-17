@@ -1,6 +1,6 @@
 ---
 title: Přijímačky
-demand: 2
+demand: 3
 ---
 
 Vrať se k příkladu vysvědčení studenta.

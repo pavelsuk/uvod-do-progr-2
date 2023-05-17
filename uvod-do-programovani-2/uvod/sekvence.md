@@ -37,7 +37,7 @@ print(guest_list)
 
 **Námět:** Vypiš uživateli informaci o počtu hostů v seznamu. Můžeš použít funkci `len`.
 
-Chceme-li si ověřit, zda je nějaká hodnota v seznamu, můžeme použít operátor `in`.
+Chceme-li si ověřit, zda je nějaká hodnota v seznamu, můžeme použít operátor `in`. Pro opačnou otázku, jestli prvek v seznamu není, použijeme `not in`.
 
 ```py
 incoming_person = input("Zadej jméno příchozího hosta: ")
