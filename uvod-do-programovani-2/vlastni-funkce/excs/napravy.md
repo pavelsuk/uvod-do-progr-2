@@ -14,10 +14,10 @@ Uvažuj limity pro maximální hmotnost nákladního vozidla, které jsou v tabu
 | 4   | 32 |
 | 5  | 48 |
 
-Pokud je limit překročen, platí provozovatel pokutu 1000 Kč za každou tunu, o které je vozidlo těžší. Například pokud má vozidlo 4 nápravy a hmotnost 34 tun, platí provozovatel pokutu 2000 Kč. Napiš funkci `spocitel_pokutu()`, která bude mít dva parametry - `pocet_naprav` (počet náprav vozidla) a `hmotnost` (hmotnost vozidla v tunách). Funkce na základě těchto parametrů vypočte výpiš pokuty a vráti ji jako celé číslo.
+Pokud je limit překročen, platí provozovatel pokutu 1000 Kč za každou tunu, o které je vozidlo těžší. Například pokud má vozidlo 4 nápravy a hmotnost 34 tun, platí provozovatel pokutu 2000 Kč. Napiš funkci `spocitej_pokutu()`, která bude mít dva parametry - `pocet_naprav` (počet náprav vozidla) a `hmotnost` (hmotnost vozidla v tunách). Funkce na základě těchto parametrů vypočte výpiš pokuty a vráti ji jako celé číslo.
 
 ```py
-pokuta = spocitel_pokutu(4, 34)
+pokuta = spocitej_pokutu(4, 34)
 print(pokuta) # 2000
 ```
 
@@ -36,4 +36,4 @@ vazeni = [
 
 ```
 
-Projdi seznam pomocí cyklu a pro každé vážení urči (s využitím funkce `spocitel_pokutu()`) výši pokuty. Spočítej celkovou výši pokut za všechna vážení.
+Projdi seznam pomocí cyklu a pro každé vážení urči (s využitím funkce `spocitej_pokutu()`) výši pokuty. Spočítej celkovou výši pokut za všechna vážení.
