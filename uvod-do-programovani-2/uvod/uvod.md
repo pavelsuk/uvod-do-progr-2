@@ -70,3 +70,10 @@ Relativně novou vlastností Pythonu je možnost využívání _formátovaných 
 ```py
 print(f"Cena {number_of_tickets} lístků na hru {play} je celkem {total_price} Kč.")
 ```
+
+## Cvičení
+::exc[excs>zvetseni-promenne]
+::exc[excs>zvetseni-promenne-2]
+
+## Bonus
+::exc[excs>fahrnheit-vs-celsius]
