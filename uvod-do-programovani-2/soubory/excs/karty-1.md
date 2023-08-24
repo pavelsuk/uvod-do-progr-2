@@ -11,6 +11,8 @@ Výstup programu může vypadat například takto:
 Karta: kluk kříže
 ```
 
----solution
+:::solution
 
 Jak vybrat náhodný prvek ze seznamu hledej v dokumentaci k modulu `random`.
+
+:::

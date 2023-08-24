@@ -95,10 +95,10 @@ jmena = ['martin', 'jana', 'petr', 'simona']
 ```
 
 ## Cvičení: Seznamy
-::exc[excs>pohyby-na-uctu]
-::exc[excs>prumer]
-::exc[excs>rozpeti]
+::exc[excs/pohyby-na-uctu]
+::exc[excs/prumer]
+::exc[excs/rozpeti]
 
 ## Bonusy
-::exc[excs>stred-seznamu]
-::exc[excs>stred-seznamu-2]
+::exc[excs/stred-seznamu]
+::exc[excs/stred-seznamu-2]

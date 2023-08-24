@@ -25,6 +25,6 @@ with open('uzivatele.txt', mode='w', encoding='utf-8') as output_file:
 
 
 ## Cvičení: Zápis do souborů
-::exc[excs>dny-v-mesici]
-::exc[excs>vytvoreni-souboru]
-::exc[excs>rozepsana-vyplata]
+::exc[excs/dny-v-mesici]
+::exc[excs/vytvoreni-souboru]
+::exc[excs/rozepsana-vyplata]

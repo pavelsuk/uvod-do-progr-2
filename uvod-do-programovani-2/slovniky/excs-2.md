@@ -1,2 +1,2 @@
 ## Cvičení na doma
-::exc[excs>spolubydlici]
+::exc[excs/spolubydlici]

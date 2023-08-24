@@ -52,5 +52,5 @@ Tentokrát nám z obrázku "nezmizelo" celé patro. Výběr pomocí rozsahu toti
 Obrázek v plné velikosti je [zde](assets/Indexovani-Page-5.drawio.svg).
 
 ## Cvičení: Vícerozměrné struktury
-::exc[excs>zavody]
-::exc[excs>zavody-2]
+::exc[excs/zavody]
+::exc[excs/zavody-2]

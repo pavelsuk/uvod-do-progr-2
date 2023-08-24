@@ -77,12 +77,12 @@ empty_dict = {}
 ```
 
 ## Cvičení
-::exc[excs>vysvedceni]
-::exc[excs>detektivky]
-::exc[excs>tombola]
+::exc[excs/vysvedceni]
+::exc[excs/detektivky]
+::exc[excs/tombola]
 
 ## Bonusy
-::exc[excs>vecirek]
+::exc[excs/vecirek]
 
 ### Čtení na doma - odebrání hodnoty
 

@@ -43,8 +43,8 @@ print(data)
 ```
 
 ## Cvičení: API a JSON
-::exc[excs>seznam-lidi]
-::exc[excs>svatky]
+::exc[excs/seznam-lidi]
+::exc[excs/svatky]
 
 
 ### Čekání na odpověď

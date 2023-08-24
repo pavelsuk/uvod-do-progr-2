@@ -47,8 +47,8 @@ AttributeError: partially initialized module 'math' has no attribute 'ceil' (mos
 Víte už, čím to je. Přejmenujte váš skript na jiný název a pokud se vám v pracovním adresáři vytvořil adresář `__pycache__`, tak jej také smažte.
 
 ## Cvičení: Moduly
-::exc[excs>zaokrouhlovani]
+::exc[excs/zaokrouhlovani]
 
 ## Bonusy
-::exc[excs>prijimacky]
-::exc[excs>modus]
+::exc[excs/prijimacky]
+::exc[excs/modus]

@@ -7,7 +7,7 @@ Stáhněte si soubor [words.txt](assets/words.txt) a zpracujte z něj výstupní
 
 Vzorový výstup: [output.json](assets/output.json).
 
----solution
+:::solution
 
 1. Vytvořím si prázdný slovník, do kterého budu vytvářet požadovaný výstup
 1. Otevřu si vstupní soubor a budu ho načítat v cyklu po řádcích
@@ -18,3 +18,5 @@ Vzorový výstup: [output.json](assets/output.json).
 1. Po zpracování celého vstupu seřadím seznamy slov na všech klíčích
 1. Výstupní slovník zapíšu do souboru ve formátu JSON
 1. V dokumentaci musím najít, jak zajistím, aby byl výstup hezky odsazovaný o 4 mezery a klíče slovníku byly seřazené
+
+:::

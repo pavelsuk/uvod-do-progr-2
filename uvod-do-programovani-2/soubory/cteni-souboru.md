@@ -60,8 +60,8 @@ print(output)
 V předchozí ukázce vidíme elegantní uložení dvou hodnot na řádku rozdělené podle znaku tabulátor do samostatných proměnných `day` a `temp`. Jedná se o praktické využití datového typu :term{cs="n-tice" en="tuple"}. Toto si můžeme dovolit díky tomu, že přesně známe strukturu dat, se kterými pracujeme.
 
 ## Cvičení: Čtení ze souborů
-::exc[excs>vyplata-presneji]
-::exc[excs>pocet-slov]
+::exc[excs/vyplata-presneji]
+::exc[excs/pocet-slov]
 
 ## Bonus
-::exc[excs>pujcovna]
+::exc[excs/pujcovna]

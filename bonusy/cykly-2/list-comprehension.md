@@ -63,19 +63,19 @@ print(prvni)  # [1, 3, 4, 1, 1, 1]
 ```
 
 ## Cvičení: list comprehension
-::exc[excs>seznamy-cisel]
-::exc[excs>seznamy-retezcu]
-::exc[excs>seznam-teplot]
-::exc[excs>cteni-kodu]
+::exc[excs/seznamy-cisel]
+::exc[excs/seznamy-retezcu]
+::exc[excs/seznam-teplot]
+::exc[excs/cteni-kodu]
 
 ## Doporučené úložky na doma
-::exc[excs>overovani-veku]
-::exc[excs>promitani]
-::exc[excs>pocty-obyvatel]
-::exc[excs>volby]
+::exc[excs/overovani-veku]
+::exc[excs/promitani]
+::exc[excs/pocty-obyvatel]
+::exc[excs/volby]
 
 ## Volitelné úložky na doma
-::exc[excs>elegantni-volby]
+::exc[excs/elegantni-volby]
 
 
 ## Podmínky v list comprehension

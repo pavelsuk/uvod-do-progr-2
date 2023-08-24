@@ -94,4 +94,4 @@ except ValueError:
 
 
 ## Cvičení: Výjimky
-::exc[excs>deleni]
+::exc[excs/deleni]

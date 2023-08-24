@@ -41,4 +41,4 @@ Podívejme se na ještě jeden příklad zápisu dat. Data reprezentují informa
 Všimni si, jak obsah JSON souboru představující jeden kurz, obsahuje pod klíčem `konani` seznam dalších slovníků. Každý z nich reprezentuje jedno konání kurzu a dále obsahuje například seznam koučů atd.
 
 ## Cvičení: JSON
-::exc[excs>kurz]
+::exc[excs/kurz]

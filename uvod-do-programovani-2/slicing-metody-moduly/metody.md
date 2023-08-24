@@ -76,9 +76,9 @@ print(novy_text)
 Výsledkem je text: "Kurz vede lektor Martin".
 
 ## Cvičení: Řetězce, metody
-::exc[excs>prevod-pismen]
-::exc[excs>cisla-jako-text]
-::exc[excs>cisla-v-textu]
+::exc[excs/prevod-pismen]
+::exc[excs/cisla-jako-text]
+::exc[excs/cisla-v-textu]
 
 ## Bonusy
-::exc[excs>chytrejsi-cisla-jako-text]
+::exc[excs/chytrejsi-cisla-jako-text]

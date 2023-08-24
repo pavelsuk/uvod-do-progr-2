@@ -82,5 +82,5 @@ winner_time = winner["casy"]["oficialni"]
 ```
 
 ## Cvičení: JSON
-::exc[excs>zavod]
-::exc[excs>transformace-dat]
+::exc[excs/zavod]
+::exc[excs/transformace-dat]

@@ -26,4 +26,4 @@ print(s)
 ```
 
 ## Cvičení
-::exc[excs>mnoziny]
+::exc[excs/mnoziny]

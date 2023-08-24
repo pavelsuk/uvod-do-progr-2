@@ -31,7 +31,7 @@ if mark == 5:
 print(f"Výsledná známka je {mark}.")
 ```
 
-::exc[excs>hotel]
+::exc[excs/hotel]
 
 ### Typování funkcí
 
