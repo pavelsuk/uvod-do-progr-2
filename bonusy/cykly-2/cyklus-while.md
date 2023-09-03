@@ -32,8 +32,9 @@ print("Heslo zadano")
 
 Podmínka cyklu `while` se bude vyhodnocovat vždy jako pravdivá (jedná se o hodnotu _True_) a pouze na nás je, abychom ve vhodném místě cyklus `while` ukončili pomocí příkazu `break`.
 
-## Cvičení: Cyklus while
+## Cvičení: Cyklus `while`
 ::exc[excs/hadani]
+::exc[excs/slicing-seznamu]
 
 ### Příkaz `continue`
 Příkaz `continue` je podobný příkazu `break`, ale s tím rozdílem, že neukončí celý cyklus, ale pouze přeskočí zbytek těla cyklu a pokračuje další iterací. Pokud je použit v cyklu `for`, řídící proměnná cyklu `for` nabude nové hodnoty (tzn. zpracuje se další prvek seznamu nebo další číslo z rozsahu `range()`). U cyklu `while` dojde opět k vyhodnocování jeho podmínky.
