@@ -6,17 +6,21 @@ Sekvence jsou hodnoty, které v sobě obsahují jiné hodnoty. Zatím jsme pozna
 
 Řetězce jsou vlastně sekvence skládající se z jednotlivých písmen. K jednotlivým prvkům sekvence přistupujeme pomocí hranatých závorek, které píšeme za název řetězce. Písmena jsou číslovaná (indexovaná) od 0.
 
-Ukážeme si například, jak z rodného čísla zjistit datum narození.
+Uvažujme například, že naše aplikace má zjistit leteckou společnost podle čísla letu. Pro zjednodušení ji naučíme rozpoznat pouze dvě společnosti: 
+
+* British Airways (číslo letu začíná BA),
+* Lufthansa (číslo letu začíná LH).
 
 ```py
-id_number = input("Zadejte rodné číslo: ")
-year_of_birth = id_number[0] + id_number[1]
-year_of_birth = int(year_of_birth)
-if year_of_birth > 20:
-    year_of_birth = 1900 + year_of_birth
+flight_number = input("Zadejte číslo letu: ")
+prefix = flight_number[0] + flight_number[1]
+if prefix == "BA":
+    company = "British Airways"
+elif prefix == "LH":
+    company = "Lufthansa"
 else:
-    year_of_birth = 2000 + year_of_birth
-print(f"Uživatel(ka) se narodil(a) v roce {year_of_birth}.")
+    company = "Neznámá společnost"
+print(f"Letíte se společností {company}")
 ```
 
 ### Seznamy
@@ -49,11 +53,13 @@ else:
 
 Sekvence v sobě mohou obsahovat i jiné sekvence. Je to podobné, jako polička na knihy. Ta obsahuje několik knih, každá kniha má několik kapitol, každá kapitola se skládá ze spousty slov a písmen. Níže máš příklad seznamu uvnitř seznamu, který obsahuje jména a známky studentů v nějakém předmětu.
 
+Data si nejprve ukážeme jako tabulku.
+
 ```py
 school_marks = [
     ["Jiří", 1, 4, 3, 2],
-    ["Natálie", 2, 3, 4],
-    ["Klára", 3, 2, 4, 1, 3]
+    ["Natálie", 2, 3, 4, 3],
+    ["Tereza", 1, 1, 2, 1],
 ]
 
 print(f"První student(ka) v seznamu je {school_marks[0][0]}.")

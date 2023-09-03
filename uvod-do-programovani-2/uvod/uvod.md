@@ -1,8 +1,6 @@
 ## Úvod, proměnné a hodnoty
 
-Během workshopu Úvod do programování 2 - Python se ponoříme o něco hlouběji do tajů programování a podíváme se, jaké další možnosti nabízí jazyk Python. Na začátku bychom si ale měli zopakovat věci, které jsme již probírali na kurzu Úvod do programování 1, případně je známe odjinud.
-
-**Před workshopem si prosím nainstaluj Python a Visual Studio Code na svůj počítač. Návod najdeš [zde](https://kodim.cz/kurzy/uvod-do-progr-1/priprava/jazyky-nastroje/).**
+Během kurzu Úvod do programování 2 - Python se ponoříme o něco hlouběji do tajů programování a podíváme se, jaké další možnosti nabízí jazyk Python. Na začátku bychom si ale měli zopakovat věci, které jsme již probírali na kurzu Úvod do programování 1, případně je známe odjinud. Před kurzem si prosím nainstaluj Python a Visual Studio Code na svůj počítač. Návod najdeš [zde](https://kodim.cz/programovani/uvod-do-progr-1/priprava/jazyky-nastroje/instalace-python).
 
 Na této stránce najdeš několik příkladů. Nejlepší způsob, jak si svoje znalosti procvičit, je zkopírovat si kódy příkladů do Visual Studia Code nebo jiného editoru a zkusit si, co dělají.
 
@@ -26,7 +24,7 @@ Každá proměnná má nějaký datový typ. Datových typů jsme poznali celkem
 
 S různými datovými typy můžeme provádět různé operace. Například můžeme sečíst dvě celá čísla (výsledkem je běžný součet) nebo dva řetězce (výsledkem je spojení obou řetězců dohromady). 
 
-Některé operace naopak dělat nemůžeme - například není možné sečíst číslo a řetězec. Naštěstí můžeme změnit datový typ proměnné pomocí funkcí `str()`, `int()` a `float()`. Ty jsou pojmenované vždy podle cílového datového typu.
+Některé operace naopak dělat nemůžeme - například není možné sečíst číslo a řetězec. Naštěstí můžeme změnit datový typ proměnné pomocí funkcí `str()`, `int()` a `float()`. Ty jsou pojmenované vždy podle **cílového** datového typu.
 
 #### Na co si dát pozor
 
@@ -44,6 +42,7 @@ Python bere náš vstup jako řetězec a pokud jej násobíme číslem, udělá 
 ```py
 number_of_tickets = input("Kolik si přejete lístků? ")
 price_per_ticket = 345
+# Změníme typ proměnné number_of_tickets z řetězce na číslo
 number_of_tickets = int(number_of_tickets)
 total_price = number_of_tickets * price_per_ticket
 print(total_price)
@@ -53,8 +52,7 @@ print(total_price)
 
 #### Tip
 
-Pokud má náš program dát uživateli nějaký výstup, často v něm musíme kombinovat čísla a texty, spojovat je a převádět. Uvažujme například jednoduchou větu: "Cena 2 lístků na hru Každý má svou pravdu je celkem 690 Kč." V ní máme jako proměnné název hry, počet lístků a cenu. I takto jednoduchá věta vyústí v relativně nepřehledný zápis.
-
+Pokud má náš program dát uživateli nějaký výstup, často v něm musíme kombinovat čísla a texty, spojovat je a převádět. Uvažujme například jednoduchou větu: "Cena 2 lístků na hru Každý má svou pravdu je celkem 690 Kč." V ní máme jako proměnné název hry, počet lístků a cenu. V Pythonu máme možnost využívání _formátovaných řetězců_ neboli f-stringů. Před uvozovky vložíme písmeno `f`. Poté můžeme vkládat do složených závorek přímo názvy proměnných, nemusíme tedy používat znaménka `+` a neprovádíme změny typů proměnných (to si Python zařídí sám).
 
 ```py
 play = "Každý má svou pravdu"
@@ -62,12 +60,6 @@ number_of_tickets = int(input("Kolik si přejete lístků? "))
 price_per_ticket = 345
 total_price = price_per_ticket * number_of_tickets
 
-print("Cena " + str(number_of_tickets) + " lístků na hru " + play + " je celkem " + str(total_price) + " Kč.")
-```
-
-Relativně novou vlastností Pythonu je možnost využívání _formátovaných řetězců_ neboli f-stringů. Před uvozovky vložíme písmeno `f`. Poté můžeme vkládat do složených závorek přímo názvy proměnných, nemusíme tedy používat znaménka `+`. Navíc za nás Python automaticky obstará i převod na `str`, není tedy třeba používat funkci `str()`.
-
-```py
 print(f"Cena {number_of_tickets} lístků na hru {play} je celkem {total_price} Kč.")
 ```
 
