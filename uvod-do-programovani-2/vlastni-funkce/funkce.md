@@ -15,11 +15,13 @@ def greet_user():
     print("Ahoj!")
 ```
 
-Pokud tento kód zkopírujeme do programu, zdánlivě se nic nestane. Funkce je sice vytvořena, ale nevoláme ji. 
+Pokud tento kód zkopírujeme do programu, zdánlivě se nic nestane. Funkce je sice vytvořena, ale nevoláme ji.
 
 ```py
 def greet_user():
     print("Ahoj!")
+
+
 greet_user()
 ```
 
@@ -35,6 +37,8 @@ Upravme naši funkci tak, aby vypsala oslovení, které jí zadáme:
 ```py
 def greet_user(name):
     print(f"Ahoj {name}!")
+
+
 greet_user("Jirko")
 ```
 
@@ -59,22 +63,33 @@ V proměnné `returned_value` tedy budeme mít uložený výsledek našeho souč
 ```py
 def sum_two_numbers(a, b):
     return a + b
-    print(sum)
+    print(a + b)
 ```
+
+:::warn
+Doporučená struktura skriptu:
+
+1. hlavička - komentář co skript dělá a kdo je autorem
+1. importy
+1. definice funkcí
+1. hlavní kód, ze kterého se funkce volají
+:::
 
 ### Čtení na doma - čistá funkce
 
-Níže definovaná funkce je bez tzv. *vedlejších efektů* (`side effect`), tj. používá pouze své parametry a nepoužívá žádné proměnné definované mimo ni (např. vstup od uživatele). Stejně tak mimo návratové hodnoty nijak neovlivňuje běh programu. Funkci bez vedlejších efektů se říká čistá funkce (`pure function`). Její výhodou je, že pro stejný vstup vždy vrací stejný výstup, což například usnadňuje testování nebo hledání chyby.
+Níže definovaná funkce je bez tzv. :term{cs="vedlejších efektů" en="side effect"}, tj. používá pouze své parametry a nepoužívá žádné proměnné definované mimo ni (např. vstup od uživatele). Stejně tak mimo návratové hodnoty nijak neovlivňuje běh programu. Funkci bez vedlejších efektů se říká :term{cs="čistá funkce" en="pure function"}. Její výhodou je, že pro stejný vstup vždy vrací stejný výstup, což například usnadňuje testování nebo hledání chyby.
 
 ```py
 def sum_two_numbers(a, b):
     return a + b
 ```
 
-Níže uvedená funkce není čistá, protože čte proměnnou "zvenku". Může tedy v různých situacích vracet různé výsledky.
+Níže uvedená funkce není čistá, protože čte tzn. globální proměnnou "zvenku". Může tedy v různých situacích vracet různé výsledky podle hodnoty uložené v té globální proměnné.
 
 ```py
 exchange_rate = 26
+
+
 def convert_to_euro(crown):
     return crown * exchange_rate
 ```
