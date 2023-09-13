@@ -34,8 +34,6 @@ Všimni si též, že za slovník vkládáme `.items()`. To je důležité, prot
 
 ```py
 for key, value in sales.items():
-    print("Knihy", key, "bylo prodáno", value, "výtisků.")
-    # Použití f-stringu
     print(f"Knihy {key} bylo prodáno {value} výtisků.")
 ```
 
@@ -43,11 +41,11 @@ Zkusme si nyní spočítat celkový počet prodaných kusů. Vytvoříme si tedy
 
 ```py
 total_sales = 0
+
 for key, value in sales.items():
-    print("Knihy", key, "bylo prodáno", value, "výtisků.")
-    # Použití f-stringu
     print(f"Knihy {key} bylo prodáno {value} výtisků.")
     total_sales = total_sales + value
+
 print(f"Celkem bylo prodáno {total_sales} výtisků.")
 ```
 
