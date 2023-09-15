@@ -18,7 +18,8 @@ print(promena)   # chyba v programu
 10
 Traceback (most recent call last):
   File "/home/martin/test.py", line 3, in <module>
-    print(promena)
+    print(promena)   # chyba v programu
+          ^^^^^^^
 NameError: name 'promena' is not defined. Did you mean: 'promenna'?
 ```
 
@@ -64,6 +65,7 @@ print(l[3])
 Traceback (most recent call last):
   File "/home/martin/test.py", line 2, in <module>
     print(l[3])
+          ~^^^
 IndexError: list index out of range
 ```
 
@@ -80,6 +82,7 @@ kocka
 Traceback (most recent call last):
   File "/home/martin/test.py", line 3, in <module>
     print(zvirata['rat'])
+          ~~~~~~~^^^^^^^
 KeyError: 'rat'
 ```
 
@@ -103,5 +106,6 @@ Zadej cislo: cislo
 Traceback (most recent call last):
   File "/home/martin/test.py", line 1, in <module>
     cislo = int(input("Zadej cislo: "))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ValueError: invalid literal for int() with base 10: 'cislo'
 ```
