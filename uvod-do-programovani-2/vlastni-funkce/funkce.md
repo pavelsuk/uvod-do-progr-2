@@ -84,7 +84,7 @@ def sum_two_numbers(a, b):
     return a + b
 ```
 
-Níže uvedená funkce není čistá, protože čte tzn. globální proměnnou "zvenku". Může tedy v různých situacích vracet různé výsledky podle hodnoty uložené v té globální proměnné.
+Níže uvedená funkce není čistá, protože čte tzv. globální proměnnou "zvenku". Může tedy v různých situacích vracet různé výsledky podle hodnoty uložené v té globální proměnné.
 
 ```py
 exchange_rate = 26
