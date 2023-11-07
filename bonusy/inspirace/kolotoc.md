@@ -9,7 +9,7 @@ Vybraný řetězec je před uživatelem zamaskován (např. emoji symboly místo
 #### Možná ukázka průběhu hry
 
 ```shell
-$ python kolotoc.py prislovi.txt
+python kolotoc.py prislovi.txt
 ▮▮▮▮▮ ▮▮▮▮▮, ▮▮▮ ▮▮▮▮▮▮ ▮▮▮▮. Hádej znak: a
 ▮▮▮▮A ▮▮▮▮▮, ▮▮▮ ▮▮▮▮▮▮ ▮▮▮▮. Hádej znak: e
 ▮▮▮▮A ▮▮▮▮▮, ▮▮E ▮▮▮▮▮▮ ▮E▮▮. Hádej znak: i

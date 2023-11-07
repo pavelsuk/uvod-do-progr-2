@@ -25,12 +25,12 @@ else:
 ```
 
 ```shell
-$ python program.py
+python program.py
 Zadej parametr na příkazovou řádku!
 ```
 
 ```shell
-$ python program.py PARAMETR
+python program.py PARAMETR
 Zadán parametr: PARAMETR
 ```
 
@@ -48,12 +48,12 @@ else:
 ```
 
 ```shell
-$ python program.py PARAMETR
+python program.py PARAMETR
 Zadej číslo jako parametr na příkazovou řádku!
 ```
 
 ```shell
-$ python program.py 100
+python program.py 100
 Zadán parametr: 100
 O jedničku vyšší je: 101
 ```
