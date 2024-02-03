@@ -79,6 +79,3 @@ Výsledkem je text: "Kurz vede lektor Martin".
 ::exc[excs/prevod-pismen]
 ::exc[excs/cisla-jako-text]
 ::exc[excs/cisla-v-textu]
-
-## Bonusy
-::exc[excs/chytrejsi-cisla-jako-text]

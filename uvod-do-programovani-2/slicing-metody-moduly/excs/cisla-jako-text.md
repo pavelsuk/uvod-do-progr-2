@@ -22,4 +22,5 @@ hodnoty = ['12', '1', '11', '-11']
 1. Převeďte tuto hodnotu na číslo a přičtěte k němu 4. Výsledek uložte do proměnné `vysledek`.
 1. Převeďte hodnotu v proměnné `vysledek` zpět na řetězec a uložte ji na třetí pozici v seznamu `hodnoty`.
 
+Můžete také zkusit vymyslet, jak udělat zápis příkazů co nejúspornější. Dá se dojít až k tomu, že celé řešení bude na jeden řádek.
 :::
