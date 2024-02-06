@@ -1,4 +1,4 @@
-## Čtení na doma
+## Nepovinné parametry a typování
 
 ### Nepovinné parametry
 

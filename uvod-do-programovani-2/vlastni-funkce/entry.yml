@@ -4,5 +4,6 @@ sections:
   - funkce
   - priklady-vyuziti
   - excs
-  - cteni-na-doma
+  - nepovinne-parametry-typovani
+  - assert
   - excs2

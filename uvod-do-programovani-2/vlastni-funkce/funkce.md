@@ -75,7 +75,7 @@ Doporučená struktura skriptu:
 1. hlavní kód, ze kterého se funkce volají
 :::
 
-### Čtení na doma - čistá funkce
+### Čistá funkce
 
 Níže definovaná funkce je bez tzv. :term{cs="vedlejších efektů" en="side effect"}, tj. používá pouze své parametry a nepoužívá žádné proměnné definované mimo ni (např. vstup od uživatele). Stejně tak mimo návratové hodnoty nijak neovlivňuje běh programu. Funkci bez vedlejších efektů se říká :term{cs="čistá funkce" en="pure function"}. Její výhodou je, že pro stejný vstup vždy vrací stejný výstup, což například usnadňuje testování nebo hledání chyby.
 
