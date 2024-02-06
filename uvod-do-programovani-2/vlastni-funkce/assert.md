@@ -29,5 +29,5 @@ U hodnot 2 a 2 tato funkce "projde", ale jde čistě o náhodu - pro čísla 2 a
 
 ```python
 value = sum_two_numbers(2, 2)
-assert value == 5, "Sum of 2 a 2 should be 2"
+assert value == 4, "Sum of 2 a 2 should be 4"
 ```
