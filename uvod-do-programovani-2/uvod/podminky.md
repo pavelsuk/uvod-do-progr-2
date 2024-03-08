@@ -20,7 +20,7 @@ print(f"Celková cena nákupu je {total_price} Kč.")
 
 #### Na co si dát pozor
 
-* Na konci řádku s podmínkou musíme zapsat dvojtečku (`:`). Poté Visual Studio Code provádí odsazení automaticky. 
+* Na konci řádku s podmínkou musíme zapsat dvojtečku (`:`). Poté Visual Studio Code provádí odsazení automaticky.
 * Každá podmínka musí obsahovat alespoň jeden řádek, tj. minimálně jeden řádek po podmínce musí být odsazený.
 
 #### Komplexnější podmínky
@@ -34,10 +34,10 @@ total_price = number_of_tickets * price_per_ticket
 if total_price >= 500:
     discount = 0.1
     total_price = total_price * (1 - discount)
-    print(f"Získáváte slevu {discount * 100}.")
+    print(f"Získáváte slevu {discount * 100} %")
 else:
     to_discount = total_price - 500
-    print(f"Nakupjte ještě za {to_discount} Kč a získáte slevu 10 %!")
+    print(f"Nakupte ještě za {to_discount} Kč a získáte slevu 10 %!")
 
 print(f"Celková cena nákupu je {total_price} Kč.")
 ```
@@ -51,14 +51,14 @@ total_price = number_of_tickets * price_per_ticket
 if total_price >= 1500:
     discount = 0.2
     total_price = total_price * (1 - discount)
-    print(f"Získáváte slevu {discount * 100}.")
+    print(f"Získáváte slevu {discount * 100} %")
 elif total_price >= 500:
     discount = 0.1
     total_price = total_price * (1 - discount)
-    print(f"Získáváte slevu {discount * 100}.")
+    print(f"Získáváte slevu {discount * 100} %")
 else:
     to_discount = total_price - 500
-    print(f"Nakupjte ještě za {to_discount} Kč a získáte slevu 10 %!")
+    print(f"Nakupte ještě za {to_discount} Kč a získáte slevu 10 %!")
 
 print(f"Celková cena nákupu je {total_price} Kč.")
 ```
@@ -78,14 +78,14 @@ if age >= 13:
     if total_price >= 1500:
         discount = 0.2
         total_price = total_price * (1 - discount)
-        print(f"Získáváte slevu {discount * 100}.")
+        print(f"Získáváte slevu {discount * 100} %")
     elif total_price >= 500:
         discount = 0.1
         total_price = total_price * (1 - discount)
-        print(f"Získáváte slevu {discount * 100}.")
+        print(f"Získáváte slevu {discount * 100} %")
     else:
         to_discount = total_price - 500
-        print(f"Nakupjte ještě za {to_discount} Kč a získáte slevu 10 %!")
+        print(f"Nakupte ještě za {to_discount} Kč a získáte slevu 10 %!")
 
     print(f"Celková cena nákupu je {total_price} Kč.")
 else:
