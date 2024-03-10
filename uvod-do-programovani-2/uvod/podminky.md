@@ -36,7 +36,7 @@ if total_price >= 500:
     total_price = total_price * (1 - discount)
     print(f"Získáváte slevu {discount * 100} %")
 else:
-    to_discount = total_price - 500
+    to_discount = 500 - total_price
     print(f"Nakupte ještě za {to_discount} Kč a získáte slevu 10 %!")
 
 print(f"Celková cena nákupu je {total_price} Kč.")
@@ -57,7 +57,7 @@ elif total_price >= 500:
     total_price = total_price * (1 - discount)
     print(f"Získáváte slevu {discount * 100} %")
 else:
-    to_discount = total_price - 500
+    to_discount = 500 - total_price
     print(f"Nakupte ještě za {to_discount} Kč a získáte slevu 10 %!")
 
 print(f"Celková cena nákupu je {total_price} Kč.")
@@ -84,7 +84,7 @@ if age >= 13:
         total_price = total_price * (1 - discount)
         print(f"Získáváte slevu {discount * 100} %")
     else:
-        to_discount = total_price - 500
+        to_discount = 500 - total_price
         print(f"Nakupte ještě za {to_discount} Kč a získáte slevu 10 %!")
 
     print(f"Celková cena nákupu je {total_price} Kč.")
