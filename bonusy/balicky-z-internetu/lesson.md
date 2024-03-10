@@ -1,6 +1,6 @@
 ## Balíčky z internetu
 
-Internet nabízí obrovské množství frameworků, balíčků a knihoven, které si můžeme přidat do našeho programu a které výrazně rozšíří možnosti našeho programu a ušetří nám spoustu práce. Řadu z nich můžeme jednoduše nainstalovat pomocí aplikace `pip`. Přehled nejoblíbenějších balíčků pro Python najdete v různých článcích, stačí například do vyhledávače zadat dotaz "the most popular python packages".
+Internet nabízí obrovské množství frameworků, balíčků a knihoven, které si můžeme přidat do našeho programu, a které výrazně rozšíří možnosti našeho programu a ušetří nám spoustu práce. Řadu z nich můžeme jednoduše nainstalovat pomocí aplikace `pip`. Přehled nejoblíbenějších balíčků pro Python najdete v různých článcích, stačí například do vyhledávače zadat dotaz "the most popular python packages".
 
 Použití nějakého balíčku v projektu je dobré si rozmyslet. Zde jsou nějaké kritéria, které je dobré vzít v úvahu:
 
