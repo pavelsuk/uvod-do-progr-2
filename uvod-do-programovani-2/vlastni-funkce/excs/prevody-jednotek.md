@@ -30,6 +30,6 @@ Napište funkce: `kmh_na_mph(kmh)` a `mph_na_kmh(mph)`, které umožní převod 
 
 Vytvořte dvě funkce: `celsia_na_fahrenheit(teplota)` a `fahrenheit_na_celsia(teplota)`, které umožňují převod teploty mezi stupni Celsia a stupni Fahrenheit.
 
-:::warn
+:::box{type=tip}
 Všechny výsledky si ověřte pomocí online kalkulátoru, že vycházejí správně!
 :::
