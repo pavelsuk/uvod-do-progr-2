@@ -66,13 +66,13 @@ def sum_two_numbers(a, b):
     print(a + b)
 ```
 
-:::warn
+:::box{type=tip}
 Doporučená struktura skriptu:
 
 1. hlavička - komentář co skript dělá a kdo je autorem
-1. importy
-1. definice funkcí
-1. hlavní kód, ze kterého se funkce volají
+2. importy
+3. definice funkcí
+4. hlavní kód, ze kterého se funkce volají
 :::
 
 ### Čistá funkce
